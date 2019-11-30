@@ -9,10 +9,6 @@ working with and completing my programming projects. The purpose is twofold:
 
 * [Who is this for?](#who-is-this-for)
 * [Usage](#usage)
-    * [Syntax in template files](#syntax-in-template-files)
-        * [Verbatim sections](#verbatim-sections)
-        * [Descriptions](#descriptions)
-        * [Instructions](#instructions)
 * [Project instructions][3]
 * [Licensing](#licensing)
 * [How to contribute](#how-to-contribute)
