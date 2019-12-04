@@ -10,6 +10,10 @@ working with and completing my programming projects. The purpose is twofold:
 * [Who is this for?](#who-is-this-for)
 * [Usage](#usage)
 * [Project instructions][3]
+    * [Initiate](#initiate)
+    * [Plan](#plan)
+    * [Work](#work)
+    * [Complete](#complete)
 * [Licensing](#licensing)
 * [How to contribute](#how-to-contribute)
 * [Versioning](#versioning)
@@ -24,7 +28,7 @@ upon this to get a head start.
 ## Usage
 The purpose of this project guide is to be of help when initiating, working 
 with and completing programming projects. The way to use it is to follow the 
-step by step [instructions defined in this document][3].
+step-by-step [instructions defined in this document][3].
 
 If you're using this guide as a template for your own projects, feel free to 
 skip any steps that doesn't fit your particular project.
@@ -33,6 +37,14 @@ You can either read all the documents in this repository [online on Github][1]
 or [download them for offline use][2].
 
 ## Project instructions
+
+### Initiate
+
+### Plan
+
+### Work
+
+### Complete
 
 ## Licensing
 The files in this repository is licensed under a Creative Commons Attribution 
@@ -53,4 +65,5 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [4]: CONTRIBUTING.md
 [5]: LICENSE
 [6]: https://semver.org/
+[7]: https://github.com/olivertwistor/olivertwistor-programming-style-guide
 [9]: CHANGELOG.md
