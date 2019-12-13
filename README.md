@@ -37,10 +37,25 @@ You can either read all the documents in this repository [online on Github][1]
 or [download them for offline use][2].
 
 ## Project instructions
+For every project, go through each of the four phases &mdash; initiate, plan, 
+work and complete &mdash; and follow the instructions.
 
 ### Initiate
+1. Create a new Github repository with issues enabled.
+1. In the file `README.md`, write the following:
+    1. Background. What is the context in which the project exist? Are there 
+    any competing products out there?
+    1. Purpose. Why do we need the project? What is the desired long-term 
+    outcome?
+    1. Goal. What will the final product look like?
+    1. Stakeholders. Who are the users? Is there any regulations that affects 
+    the project?
+1. Choose an appropriate license and put the details in a file called `LICENSE`.
 
 ### Plan
+After the initiate phase, it's time to do some more concrete planning. This 
+phase and the next one (*Work*) should be done iteratively as long as the 
+project isn't considered complete.
 
 ### Work
 
