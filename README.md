@@ -1,6 +1,6 @@
 # Olivertwistor Project Guide
-Hello! I am Johan Nilsson a.k.a. Olivertwistor. This is a guide for initiating, 
-working with and completing my programming projects. The purpose is twofold:
+Hello! I am Johan Nilsson a.k.a. Olivertwistor. This is a project model for my 
+programming projects. The purpose is twofold:
 
 * to make it easier for me to work with my programming projects
 * to help contributors know how to work with my projects
@@ -10,56 +10,78 @@ working with and completing my programming projects. The purpose is twofold:
 * [Who is this for?](#who-is-this-for)
 * [Usage](#usage)
 * [Project instructions][3]
-    * [Initiate](#initiate)
-    * [Plan](#plan)
-    * [Work](#work)
-    * [Complete](#complete)
+    * [Repository setup][8]
+    * [Project plan][10]
+    * [Milestone plan][11]
+    * [Milestone execution][12]
+    * [Milestone release][13]
+    * [Project end][14]
 * [Licensing](#licensing)
 * [How to contribute](#how-to-contribute)
 * [Versioning](#versioning)
 
 ## Who is this for?
-This project guide is mainly for me and anyone who is a contributor to any of 
+This project model is mainly for me and anyone who is a contributor to any of 
 the projects I've created.
 
 It can also be used as a template for your own projects. Feel free to build 
 upon this to get a head start.
 
 ## Usage
-The purpose of this project guide is to be of help when initiating, working 
-with and completing programming projects. The way to use it is to follow the 
-step-by-step [instructions defined in this document][3].
+The purpose of this project model is to be of help when working with 
+programming projects. The way to use it is to follow the step-by-step 
+[instructions defined in this document][3].
 
-If you're using this guide as a template for your own projects, feel free to 
+If you're using this model as a template for your own projects, feel free to 
 skip any steps that doesn't fit your particular project.
 
 You can either read all the documents in this repository [online on Github][1] 
 or [download them for offline use][2].
 
 ## Project instructions
-For every project, go through each of the four phases &mdash; initiate, plan, 
-work and complete &mdash; and follow the instructions.
+For every project, go through each of the following phases: 
+[repository setup][8], [project plan][10], [milestone plan][11], 
+[milestone execution][12], [milestone release][13] and [project end][14]. These 
+phases are often intertwined and you have to iterate over them many times, 
+especially the milestone phases. This outlines the general order; don't be 
+afraid to go back to a previous phase if you need to change something.
 
-### Initiate
-1. Create a new Github repository with issues enabled.
+### Repository setup
+1. Create a new Github repository.
+1. Enable issues in Settings.
+1. Remove any default labels and add the following labels:
+    * `priority: must`
+    * `priority: should`
+    * `priority: could`
+    * `priority: wait`
+
+### Project plan
+When the repository has been properly setup, it's time to start planning the 
+project as a whole.
+
 1. In the file `README.md`, write the following:
-    1. Background. What is the context in which the project exist? Are there 
-    any competing products out there?
-    1. Purpose. Why do we need the project? What is the desired long-term 
-    outcome?
-    1. Goal. What will the final product look like?
-    1. Stakeholders. Who are the users? Is there any regulations that affects 
-    the project?
-1. Choose an appropriate license and put the details in a file called `LICENSE`.
+    1. Background &mdash; What is the context in which the project exist? Are 
+    there any competing projects out there?
+    1. Purpose &mdash; Why do we need the project? What is the desired 
+    long-term outcome?
+    1. Goal &mdash; What will the final product or service look like?
+    1. Stakeholders &mdash; Who are the users? Are there any regulations that 
+    affects the project?
+1. Choose an appropriate license and put the details in a file called 
+`LICENSE`.
 
-### Plan
-After the initiate phase, it's time to do some more concrete planning. This 
-phase and the next one (*Work*) should be done iteratively as long as the 
-project isn't considered complete.
+### Milestone plan
+In this project model, a milestone is equivalent to a release or deliverable. 
+On Github, a milestone consists of a number of issues. Therefore you should 
+think of a milestone and the issues therein as what needs to be done to get the 
+project from one functioning state (the previous milestone) to another 
+functioning state (the next milestone).
 
-### Work
+### Milestone execution
 
-### Complete
+### Milestone release
+
+### Project end
 
 ## Licensing
 The files in this repository is licensed under a Creative Commons Attribution 
@@ -81,4 +103,10 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [5]: LICENSE
 [6]: https://semver.org/
 [7]: https://github.com/olivertwistor/olivertwistor-programming-style-guide
+[8]: #repository-setup
 [9]: CHANGELOG.md
+[10]: #project-plan
+[11]: #milestone-plan
+[12]: #milestone-execution
+[13]: #milestone-release
+[14]: #project-end
