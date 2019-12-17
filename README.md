@@ -77,6 +77,11 @@ think of a milestone and the issues therein as what needs to be done to get the
 project from one functioning state (the previous milestone) to another 
 functioning state (the next milestone).
 
+1. Create a milestone in Github.
+1. For `Title`, write the next version number (according to [Semantic Versioning 2.0.0][6]). Example: *0.1.0*
+1. Leave `Due date (optional)` empty.
+1. For `Description`, write shortly about what the milestone is about. Example: *User can get information about the movie Avatar.*
+
 ### Milestone execution
 
 ### Milestone release
