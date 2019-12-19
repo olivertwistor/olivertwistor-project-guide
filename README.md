@@ -77,10 +77,12 @@ think of a milestone and the issues therein as what needs to be done to get the
 project from one functioning state (the previous milestone) to another 
 functioning state (the next milestone).
 
-1. Create a milestone in Github.
-1. For `Title`, write the next version number (according to [Semantic Versioning 2.0.0][6]). Example: *0.1.0*
-1. Leave `Due date (optional)` empty.
-1. For `Description`, write shortly about what the milestone is about. Example: *User can get information about the movie Avatar.*
+1. Create a work breakdown structure (WBS) in as long a perspective as possible.
+1. Create a new Github issue for each work package and prioritize them.
+1. Create a new Github milestone with the issues that would lead to the next 
+functioning state of the project.
+1. Optional: Create more milestones as in step 3, if you are able to plan that 
+far ahead.
 
 ### Milestone execution
 
