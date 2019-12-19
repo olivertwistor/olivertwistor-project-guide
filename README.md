@@ -95,17 +95,40 @@ you:
     1. Pick an issue that you want to work on, and self-assign it if unassigned.
     1. Create a new feature branch named with the issue number and maybe a 
     short description. Example: *5-blue-bg*
-    1. Work on the issue. Commit often and push as necessary.
-    1. When you're done with the issue, push the branch a final time and merge 
-    it with `develop`. Push the merge.
+    1. As long as you're not done with the issue:
+        1. Do some work. Commit often.
+        1. Write tests and run them. When they pass, push the branch.
+    1. Make sure that everything is properly documented.
+    1. Add what you have done in the file `CHANGELOG.md`.
+    1. Push the branch a final time.
+    1. Try to merge with `develop`.
+    1. If there are merge issues:
+        1. Resolve them to the best of your abilites. If in doubt, please ask 
+        the conflicting code's author.
+        1. Run all available tests again. When they pass, push the merge.
     1. Close the issue.
 
 ### Milestone release
+When all issues in a milestone are closed, it's time to prepare for a new 
+release of the project.
+
+1. Pick the milestone with the lowest version number that has all its issues 
+completed.
+1. Verify that the code related to each issue is pushed to (or merged with) the 
+`develop` branch.
+1. Create a new release branch named as the milestone version number.
+1. Run all available tests until they pass.
+1. Make sure that everything is properly documented.
+1. Update `README.md` as necessary, regarding instructions on installation and 
+usage.
+1. Create a new Git tag named as the milestone prepended with a *v*. Example: 
+*v1.5.2*. Push everything.
+1. Create a new Github release from the created tag.
 
 ### Project end
 
 ## Licensing
-The files in this repository is licensed under a Creative Commons Attribution 
+The files in this repository are licensed under a Creative Commons Attribution 
 4.0 International license. For detailed license terms, please read [LICENSE][5].
 
 ## How to contribute
