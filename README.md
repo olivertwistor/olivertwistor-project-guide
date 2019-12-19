@@ -46,6 +46,10 @@ phases are often intertwined and you have to iterate over them many times,
 especially the milestone phases. This outlines the general order; don't be 
 afraid to go back to a previous phase if you need to change something.
 
+The steps [milestone plan][11], [milestone execution][12] and 
+[milestone release][13] are designed to be iterated over as long as there are 
+open issues or new development ideas.
+
 ### Repository setup
 1. Create a new Github repository.
 1. Enable issues in Settings.
@@ -80,11 +84,21 @@ functioning state (the next milestone).
 1. Create a work breakdown structure (WBS) in as long a perspective as possible.
 1. Create a new Github issue for each work package and prioritize them.
 1. Create a new Github milestone with the issues that would lead to the next 
-functioning state of the project.
-1. Optional: Create more milestones as in step 3, if you are able to plan that 
-far ahead.
+functioning state of the project. Give priority to issues with higher priority.
+1. **Optional**: Create more milestones as in step 3, if you are able to plan 
+that far ahead.
 
 ### Milestone execution
+1. Pick the open milestone with the lowest version number.
+1. As long as there are open issues that are either unassigned or assigned to 
+you:
+    1. Pick an issue that you want to work on, and self-assign it if unassigned.
+    1. Create a new feature branch named with the issue number and maybe a 
+    short description. Example: *5-blue-bg*
+    1. Work on the issue. Commit often and push as necessary.
+    1. When you're done with the issue, push the branch a final time and merge 
+    it with `develop`. Push the merge.
+    1. Close the issue.
 
 ### Milestone release
 
