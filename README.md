@@ -123,9 +123,18 @@ completed.
 usage.
 1. Create a new Git tag named as the milestone prepended with a *v*. Example: 
 *v1.5.2*. Push everything.
-1. Create a new Github release from the created tag.
+1. Create a new Github release from the created tag. Describe the changes made 
+since last release.
+1. Merge the release branch with the `master` and `develop` branches.
 
 ### Project end
+Normally, programming projects never really end, but in case you want to 
+permanently cease development of a project and haven't got anyone else who want 
+to take over, you may follow these steps for an orderly end to the project.
+
+1. Update `README.md` with information that the project has permanently come to 
+an end and that visitors to the repository can't expect there to be further 
+development. Push the change to the `master` branch.
 
 ## Licensing
 The files in this repository are licensed under a Creative Commons Attribution 
