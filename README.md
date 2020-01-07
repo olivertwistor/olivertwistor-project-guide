@@ -163,5 +163,5 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [12]: #milestone-execution
 [13]: #milestone-release
 [14]: #project-end
-[15]: lifecycle/repo-setup#create-a-github-repository
-[16]: lifecycle/repo-setup#setup-basic-labels
+[15]: lifecycle/repo-setup.md#create-a-github-repository
+[16]: lifecycle/repo-setup.md#setup-basic-labels
