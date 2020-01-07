@@ -52,7 +52,7 @@ open issues or new development ideas.
 
 ### Repository setup
 1. [Create a new Github repository][15].
-1. [Enable issues](#lifecycle/repo-setup#enable-issues) in Settings.
+1. [Enable issues](lifecycle/repo-setup.md#enable-issues) in Settings.
 1. Remove any default labels and [add the following labels][16]:
     * `priority: must`
     * `priority: should`
