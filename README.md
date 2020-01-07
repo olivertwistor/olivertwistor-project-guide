@@ -51,13 +51,13 @@ The steps [milestone plan][11], [milestone execution][12] and
 open issues or new development ideas.
 
 ### Repository setup
-1. Create a new Github repository.
-1. Enable issues in Settings.
-1. Remove any default labels and add the following labels:
+1. [Create a new Github repository][15].
+1. [Enable issues](lifecycle/repo-setup.md#enable-issues) in Settings.
+1. Remove any default labels and [add the following labels][16]:
     * `priority: must`
     * `priority: should`
     * `priority: could`
-    * `priority: wait`
+    * `priority: would`
 
 ### Project plan
 When the repository has been properly setup, it's time to start planning the 
@@ -163,3 +163,5 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [12]: #milestone-execution
 [13]: #milestone-release
 [14]: #project-end
+[15]: lifecycle/repo-setup.md#create-a-github-repository
+[16]: lifecycle/repo-setup.md#setup-basic-labels
