@@ -94,8 +94,8 @@ that far ahead.
 you:
     1. Pick an issue that you want to work on, and [assign yourself to it][17]. 
     To simplify things, only assign yourself on unassigned issues.
-    1. Create a new feature branch named with the issue number and maybe a 
-    short description. Example: *5-blue-bg*
+    1. [Create a new feature branch][18] named with the issue number and maybe 
+    a short description. Example: *5-blue-bg*
     1. As long as you're not done with the issue:
         1. Do some work. Commit often.
         1. Write tests and run them. When they pass, push the branch.
@@ -167,3 +167,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [15]: lifecycle/repo-setup.md#create-a-github-repository
 [16]: lifecycle/repo-setup.md#setup-basic-labels
 [17]: lifecycle/milestone-execution.md#assign-issues
+[18]: lifecycle/milestone-execution.md#branches
