@@ -92,7 +92,8 @@ that far ahead.
 1. Pick the open milestone with the lowest version number.
 1. As long as there are open issues that are either unassigned or assigned to 
 you:
-    1. Pick an issue that you want to work on, and self-assign it if unassigned.
+    1. Pick an issue that you want to work on, and [assign yourself to it][17]. 
+    To simplify things, only assign yourself on unassigned issues.
     1. Create a new feature branch named with the issue number and maybe a 
     short description. Example: *5-blue-bg*
     1. As long as you're not done with the issue:
@@ -165,3 +166,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [14]: #project-end
 [15]: lifecycle/repo-setup.md#create-a-github-repository
 [16]: lifecycle/repo-setup.md#setup-basic-labels
+[17]: lifecycle/milestone-execution.md#assign-issues
