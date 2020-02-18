@@ -98,7 +98,7 @@ you:
     a short description. Example: *5-blue-bg*
     1. As long as you're not done with the issue:
         1. Do some work. Commit often.
-        1. Write tests and run them. When they pass, push the branch.
+        1. [Write tests][19] and run them. When they pass, push the branch.
     1. Make sure that everything is properly documented.
     1. Add what you have done in the file `CHANGELOG.md`.
     1. Push the branch a final time.
@@ -168,3 +168,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [16]: lifecycle/repo-setup.md#setup-basic-labels
 [17]: lifecycle/milestone-execution.md#assign-issues
 [18]: lifecycle/milestone-execution.md#branches
+[19]: lifecycle/milestone-execution.md#testing
