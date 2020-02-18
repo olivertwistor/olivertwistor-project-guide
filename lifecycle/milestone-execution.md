@@ -11,15 +11,14 @@ yourself.
 1. Click on an issue that is unassigned. You can see if it is by the lack of an 
 avatar in the `Assignee` column.
 1. In the sidebar to the right and at the top is a heading called `Assignees`. 
-Either click the link `No one&mdash;assign yourself` or click the little cogwheel 
-and select yourself.
+Either click the link `No one&mdash;assign yourself` or click the little 
+cogwheel and select yourself.
 
 ## Branches
-For the basics about Git branches, I refer you to the 
-[Git website](https://git-scm.com/).
+For the basics about Git branches, I refer you to the [Git website][1].
 
 My projects all follow the same branching model, in order to make things easy 
-for everyone.
+for everyone: [Vincent Driessen's branching model][2].
 
-* On the `master` branch lies only stable code and the most recent release.
-* On the `develop` branch lies unreleased code but still mostly stable.
+[1]: https://git-scm.com/
+[2]: https://nvie.com/posts/a-successful-git-branching-model/
