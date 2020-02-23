@@ -35,6 +35,16 @@ whatever format is standard for the programming language in question, for
 example Javadoc for Java. Comments inside of methods and functions are highly 
 suggested, particularly for big or complex chunks of code.
 
+## Changelog
+The changelog is a file that details all the (significant) changes done to the 
+code between releases. More specifically, it details changes to the API. Thus, 
+the intended audience is not primarily the end-user, but instead other 
+developers.
+
+The changelog should be written to a file called `CHANGELOG.md`, be stored in 
+the repository root and follow the same format as [Keep a Changelog][4].
+
 [1]: https://git-scm.com/
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
 [3]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
+[4]: https://keepachangelog.com/en/1.0.0/

@@ -100,7 +100,7 @@ you:
         1. Do some work. Commit often.
         1. [Write tests][19] and run them. When they pass, push the branch.
     1. Make sure that everything is [properly documented][23].
-    1. Add what you have done in the changelog.
+    1. Add what you have done in the [changelog][24].
     1. Push the branch a final time.
     1. Try to merge with `develop`.
     1. If there are merge issues:
@@ -172,3 +172,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [18]: lifecycle/milestone-execution.md#branches
 [19]: lifecycle/milestone-execution.md#testing
 [23]: lifecycle/milestone-execution.md#documentation
+[24]: lifecycle/milestone-execution.md#changelog
