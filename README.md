@@ -94,14 +94,15 @@ that far ahead.
 1. Pick the open milestone with the lowest version number.
 1. As long as there are open issues that are either unassigned or assigned to 
 you:
-    1. Pick an issue that you want to work on, and self-assign it if unassigned.
-    1. Create a new feature branch named with the issue number and maybe a 
-    short description. Example: *5-blue-bg*
+    1. Pick an issue that you want to work on, and [assign yourself to it][17]. 
+    To simplify things, only assign yourself on unassigned issues.
+    1. [Create a new feature branch][18] named with the issue number and maybe 
+    a short description. Example: *5-blue-bg*
     1. As long as you're not done with the issue:
         1. Do some work. Commit often.
-        1. Write tests and run them. When they pass, push the branch.
-    1. Make sure that everything is properly documented.
-    1. Add what you have done in the file `CHANGELOG.md`.
+        1. [Write tests][19] and run them. When they pass, push the branch.
+    1. Make sure that everything is [properly documented][23].
+    1. Add what you have done in the [changelog][24].
     1. Push the branch a final time.
     1. Try to merge with `develop`.
     1. If there are merge issues:
@@ -128,6 +129,8 @@ usage.
 1. Create a new Github release from the created tag. Describe the changes made 
 since last release.
 1. Merge the release branch with the `master` and `develop` branches.
+1. Delete all the feature, hotfix and release branches that was created for 
+this milestone.
 
 ### Project end
 Normally, programming projects never really end, but in case you want to 
@@ -167,6 +170,11 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [14]: #project-end
 [15]: lifecycle/repo-setup.md#create-a-github-repository
 [16]: lifecycle/repo-setup.md#setup-basic-labels
+[17]: lifecycle/milestone-execution.md#assign-issues
+[18]: lifecycle/milestone-execution.md#branches
+[19]: lifecycle/milestone-execution.md#testing
 [20]: lifecycle/milestone-plan.md#work-breakdown-structure
 [21]: lifecycle/milestone-plan.md#create-issue
 [22]: lifecycle/milestone-plan.md#create-milestone
+[23]: lifecycle/milestone-execution.md#documentation
+[24]: lifecycle/milestone-execution.md#changelog
