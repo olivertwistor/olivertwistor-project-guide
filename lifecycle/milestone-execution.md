@@ -11,7 +11,7 @@ yourself.
 1. Click on an issue that is unassigned. You can see if it is by the lack of an 
 avatar in the `Assignee` column.
 1. In the sidebar to the right and at the top is a heading called `Assignees`. 
-Either click the link `No one&mdash;assign yourself` or click the little 
+Either click the link `No one -- assign yourself` or click the little 
 cogwheel and select yourself.
 
 ## Branches
