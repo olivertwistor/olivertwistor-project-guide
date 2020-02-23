@@ -42,4 +42,7 @@ all labels that apply.
 1. Press the *Submit new issue* button.
 1. Repeat until there are no more work units without a Github issue left.
 
+## Create milestone
+
+
 [1]: repo-setup.md#setup-basic-labels

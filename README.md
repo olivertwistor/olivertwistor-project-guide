@@ -84,8 +84,9 @@ functioning state (the next milestone).
 1. Create a [work breakdown structure][20] (WBS) in as long a perspective as 
 possible.
 1. [Create a new Github issue][21] for each work unit and prioritize them.
-1. Create a new Github milestone with the issues that would lead to the next 
-functioning state of the project. Give priority to issues with higher priority.
+1. [Create a new Github milestone][22] with the issues that would lead to the 
+next functioning state of the project. Give priority to issues with higher 
+priority.
 1. **Optional**: Create more milestones as in step 3, if you are able to plan 
 that far ahead.
 
@@ -168,3 +169,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [16]: lifecycle/repo-setup.md#setup-basic-labels
 [20]: lifecycle/milestone-plan.md#work-breakdown-structure
 [21]: lifecycle/milestone-plan.md#create-issue
+[22]: lifecycle/milestone-plan.md#create-milestone
