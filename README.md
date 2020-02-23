@@ -81,7 +81,8 @@ think of a milestone and the issues therein as what needs to be done to get the
 project from one functioning state (the previous milestone) to another 
 functioning state (the next milestone).
 
-1. Create a work breakdown structure (WBS) in as long a perspective as possible.
+1. Create a [work breakdown structure][20] (WBS) in as long a perspective as 
+possible.
 1. Create a new Github issue for each work package and prioritize them.
 1. Create a new Github milestone with the issues that would lead to the next 
 functioning state of the project. Give priority to issues with higher priority.
@@ -165,3 +166,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [14]: #project-end
 [15]: lifecycle/repo-setup.md#create-a-github-repository
 [16]: lifecycle/repo-setup.md#setup-basic-labels
+[20]: lifecycle/milestone-plan.md#work-breakdown-structure
