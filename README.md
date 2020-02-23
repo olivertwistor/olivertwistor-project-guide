@@ -99,8 +99,8 @@ you:
     1. As long as you're not done with the issue:
         1. Do some work. Commit often.
         1. [Write tests][19] and run them. When they pass, push the branch.
-    1. Make sure that everything is properly documented.
-    1. Add what you have done in the file `CHANGELOG.md`.
+    1. Make sure that everything is [properly documented][23].
+    1. Add what you have done in the changelog.
     1. Push the branch a final time.
     1. Try to merge with `develop`.
     1. If there are merge issues:
@@ -127,6 +127,8 @@ usage.
 1. Create a new Github release from the created tag. Describe the changes made 
 since last release.
 1. Merge the release branch with the `master` and `develop` branches.
+1. Delete all the feature, hotfix and release branches that was created for 
+this milestone.
 
 ### Project end
 Normally, programming projects never really end, but in case you want to 
@@ -169,3 +171,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [17]: lifecycle/milestone-execution.md#assign-issues
 [18]: lifecycle/milestone-execution.md#branches
 [19]: lifecycle/milestone-execution.md#testing
+[23]: lifecycle/milestone-execution.md#documentation

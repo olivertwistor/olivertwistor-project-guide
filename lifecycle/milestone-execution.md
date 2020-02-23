@@ -29,6 +29,12 @@ Each project should detail the testing frameworks that should be used, in their
 respective `README.md` file. Test code should be committed to the Git 
 repository so other contributors can benefit from it.
 
+## Documentation
+All classes, interfaces, methods and functions should be documented using 
+whatever format is standard for the programming language in question, for 
+example Javadoc for Java. Comments inside of methods and functions are highly 
+suggested, particularly for big or complex chunks of code.
+
 [1]: https://git-scm.com/
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
 [3]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
