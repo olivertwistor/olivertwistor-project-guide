@@ -119,7 +119,7 @@ release of the project.
 completed.
 1. Verify that the code related to each issue is pushed to (or merged with) the 
 `develop` branch.
-1. Create a new release branch named as the milestone version number.
+1. Create a new [release branch named as the milestone version number][26].
 1. Run all available tests until they pass.
 1. Make sure that everything is properly documented.
 1. Update `README.md` as necessary, regarding instructions on installation and 
@@ -178,3 +178,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [22]: lifecycle/milestone-plan.md#create-milestone
 [23]: lifecycle/milestone-execution.md#documentation
 [24]: lifecycle/milestone-execution.md#changelog
+[26]: lifecycle/milestone-release.md#release-branch-naming
