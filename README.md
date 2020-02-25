@@ -120,15 +120,20 @@ completed.
 1. Verify that the code related to each issue is pushed to (or merged with) the 
 `develop` branch.
 1. Create a new [release branch named as the milestone version number][26].
-1. Run all available tests until they pass.
-1. Make sure that everything is properly documented.
+1. [Run all available tests][19] until they pass.
+1. Make sure that everything is [properly documented][23].
 1. Update `README.md` as necessary, regarding instructions on installation and 
 usage.
-1. Create a new Git tag named as the milestone prepended with a *v*. Example: 
-*v1.5.2*. Push everything.
-1. Create a new Github release from the created tag. Describe the changes made 
-since last release.
+1. [Create a new Git tag][27] named as the milestone prepended with a *v*. 
+Example: `v1.5.2`. Push everything.
+1. [Build the project][29] in at least four versions:
+    * runnable executable or library with compiled code
+    * source code without tests
+    * source code including tests
+    * generated documentation files
 1. Merge the release branch with the `master` and `develop` branches.
+1. [Create a new Github release][28] from the created tag. Describe the changes 
+made since last release.
 1. Delete all the feature, hotfix and release branches that was created for 
 this milestone.
 
@@ -180,3 +185,6 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [24]: lifecycle/milestone-execution.md#changelog
 [25]: lifecycle/project-end.md
 [26]: lifecycle/milestone-release.md#release-branch-naming
+[27]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
+[28]: lifecycle/milestone-release.md#create-github-release
+[29]: lifecycle/milestone-release.md#build-project
