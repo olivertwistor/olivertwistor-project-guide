@@ -138,8 +138,8 @@ permanently cease development of a project and haven't got anyone else who want
 to take over, you may follow these steps for an orderly end to the project.
 
 1. Update `README.md` [with information that the project has permanently come 
-to an end](lifecycle/project-end.md) and that visitors to the repository can't 
-expect there to be further development. Push the change to the `master` branch.
+to an end][25] and that visitors to the repository can't expect there to be 
+further development. Push the change to the `master` branch.
 
 ## Licensing
 The files in this repository are licensed under a Creative Commons Attribution 
@@ -178,4 +178,5 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [22]: lifecycle/milestone-plan.md#create-milestone
 [23]: lifecycle/milestone-execution.md#documentation
 [24]: lifecycle/milestone-execution.md#changelog
+[25]: lifecycle/project-end.md
 [26]: lifecycle/milestone-release.md#release-branch-naming
