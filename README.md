@@ -78,7 +78,8 @@ project as a whole.
     1. Stakeholders &mdash; Who are the users? Are there any regulations that 
     affects the project?
 1. Choose an appropriate license and put the details in a file called 
-`LICENSE`.
+`LICENSE`. It's helpful to add a section in `README.md`, describing this 
+license.
 
 ### Milestone plan
 In this project model, a milestone is equivalent to a release or deliverable. 
