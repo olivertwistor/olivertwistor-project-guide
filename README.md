@@ -1,13 +1,9 @@
 # Olivertwistor Project Guide
-Hello! I am Johan Nilsson a.k.a. Olivertwistor. This is a project model for my 
-programming projects. The purpose is twofold:
 
-* to make it easier for me to work with my programming projects
-* to help contributors know how to work with my projects
-
-## Table of contents
-
-* [Who is this for?](#who-is-this-for)
+* [Background](#background)
+* [Purpose](#purpose)
+* [Goal](#goal)
+* [Stakeholders](#stakeholders)
 * [Usage](#usage)
 * [Project instructions][3]
     * [Repository setup][8]
@@ -20,18 +16,28 @@ programming projects. The purpose is twofold:
 * [How to contribute](#how-to-contribute)
 * [Versioning](#versioning)
 
-## Who is this for?
-This project model is mainly for me and anyone who is a contributor to any of 
-the projects I've created.
+## Background
+When starting a new project, whether it is software development or anything 
+else, it helps to have a structured approach. Otherwise it's easy to lose track 
+of what to do, and you have to create ad-hoc solutions every time. This project 
+model is supposed to be that structured approach.
 
-It can also be used as a template for your own projects. Feel free to build 
-upon this to get a head start.
+## Purpose
+The purpose of this project model is to help me, others who might collaborate 
+with me on my projects and other people who want to build upon this model for 
+their own projects. This model is created with software development on Github 
+in mind, but with some minor changes, it would work for other project types as 
+well.
+
+## Goal
+The goal is to create a project model that I can use for all my projects, 
+public and private.
+
+## Stakeholders
+The people interested in this project is mainly me, but also others who may be 
+interested in using this model for themselves.
 
 ## Usage
-The purpose of this project model is to be of help when working with 
-programming projects. The way to use it is to follow the step-by-step 
-[instructions defined in this document][3].
-
 If you're using this model as a template for your own projects, feel free to 
 skip any steps that doesn't fit your particular project.
 
