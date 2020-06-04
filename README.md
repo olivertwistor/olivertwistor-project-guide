@@ -130,8 +130,8 @@ completed.
 1. Create a new [release branch named as the milestone version number][26].
 1. [Run all available tests][19] until they pass.
 1. Make sure that everything is [properly documented][23].
-1. Update `README.md` as necessary, regarding instructions on installation and 
-usage.
+1. Update `README.md` as necessary, regarding instructions on 
+[installation][31] and [usage][32].
 1. [Create a new Git tag][27] named as the milestone prepended with a *v*. 
 Example: `v1.5.2`. Push everything.
 1. [Build the project][29] in at least four versions:
@@ -197,3 +197,5 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [28]: lifecycle/milestone-release.md#create-github-release
 [29]: lifecycle/milestone-release.md#build-project
 [30]: lifecycle/milestone-execution.md#release-notes
+[31]: lifecycle/milestone-release.md#installation-instructions
+[32]: lifecycle/milestone-release.md#usage-instructions
