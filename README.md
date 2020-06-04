@@ -109,7 +109,8 @@ you:
         1. Do some work. Commit often.
         1. [Write tests][19] and run them. When they pass, push the branch.
     1. Make sure that everything is [properly documented][23].
-    1. Add what you have done in the [changelog][24].
+    1. Add what you have done in the [changelog][24] (more technical) and in 
+    the [release notes][30] (more user-friendly).
     1. Push the branch a final time.
     1. Try to merge with `develop`.
     1. If there are merge issues:
@@ -195,3 +196,4 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [27]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [28]: lifecycle/milestone-release.md#create-github-release
 [29]: lifecycle/milestone-release.md#build-project
+[30]: lifecycle/milestone-execution.md#release-notes
