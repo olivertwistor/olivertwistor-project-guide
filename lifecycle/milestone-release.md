@@ -109,7 +109,10 @@ dependencies and prerequisites.
 
 ## Usage instructions
 In this section of the readme file, you will write how to use the application, 
-library or whatever your project is.
+library or whatever your project is. This is no place for a full manual, but at 
+a minimum, explain how to interact with the most common functionality. I 
+recommend including examples, especially for libraries, to show the most common 
+API calls and expected outputs.
 
 [1]: https://ant.apache.org/
 [2]: https://gradle.org/
