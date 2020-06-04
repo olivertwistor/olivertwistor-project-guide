@@ -83,13 +83,33 @@ example `v1.7.4`.
 1. In the dropdown list *Target*, choose the `master` branch.
 1. Write the same in *Release title* as in *Tag version*.
 1. Write release notes in the text box *Describe this release*. This should be 
-a more user-friendly version of the `CHANGELOG.md` file.
+the most recent update to the `RELEASE.md` file, or at least a condensed 
+version of that.
 1. *Attach* four files:
     * runnable executable or library with compiled code
     * source code without tests
     * source code including tests
     * generated documentation files
-1. Leave the checkbox regarding pre-release empty. I don't really use 
-pre-releases, but if this release really is one, go for it and check the box.
+1. Leave the checkbox regarding pre-release empty. I don't use pre-releases, 
+but if this release really is one, go for it and check the box.
 1. Press the *Publish release* button. You can also save a draft by pressing 
 the *Save draft* button.
+
+## Installation instructions
+In this section of the readme file, you will write step-by-step instructions on 
+how to install and configure the application, library or whatever your project 
+is. All the necessary prerequisites should also be listed, including on how to 
+download and install those (or preferrably links to their own instructions, as 
+they are more likely to be more accurate and updated).
+
+Be as specific as possible when listing prerequisites and their version 
+numbers. By using build tools such as [Ant][1] or [Gradle][2], this step may be 
+easier for the user because you as the developer is in more control over 
+dependencies and prerequisites.
+
+## Usage instructions
+In this section of the readme file, you will write how to use the application, 
+library or whatever your project is.
+
+[1]: https://ant.apache.org/
+[2]: https://gradle.org/
