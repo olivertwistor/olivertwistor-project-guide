@@ -14,3 +14,4 @@ start with a complete instruction on how to work with the project.
 project will have both project documentation and a style guide ready to go. The 
 project creator may then delete the documentation when they have gotten a good 
 start.
+* Remove priorities altogether. The milestones themselves keep good order.
