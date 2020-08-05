@@ -15,12 +15,10 @@ document.
 your own. This can be headings, whole paragraphs or single words within a 
 sentence. Some examples:
 
-    *To run this program you will need a working web server with PHP >= 7.2.*
+> *To run this program you will need a working web server with PHP >= 7.2.*
 
-and
-
-    The first thing you should do to join the dev team is send an e-mail to 
-    *your e-mail address*.
+> The first thing you should do to join the dev team is send an e-mail to 
+> *your e-mail address*.
     
 ## Plain text
 Plain text is meant for text that should be preserved verbatim when you publish 
