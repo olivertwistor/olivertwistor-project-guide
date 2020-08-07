@@ -1,13 +1,9 @@
 # Olivertwistor Project Guide
-Hello! I am Johan Nilsson a.k.a. Olivertwistor. This is a project model for my 
-programming projects. The purpose is twofold:
 
-* to make it easier for me to work with my programming projects
-* to help contributors know how to work with my projects
-
-## Table of contents
-
-* [Who is this for?](#who-is-this-for)
+* [Background](#background)
+* [Purpose](#purpose)
+* [Goal](#goal)
+* [Stakeholders](#stakeholders)
 * [Usage](#usage)
 * [Project instructions][3]
     * [Repository setup][8]
@@ -20,18 +16,28 @@ programming projects. The purpose is twofold:
 * [How to contribute](#how-to-contribute)
 * [Versioning](#versioning)
 
-## Who is this for?
-This project model is mainly for me and anyone who is a contributor to any of 
-the projects I've created.
+## Background
+When starting a new project, whether it is software development or anything 
+else, it helps to have a structured approach. Otherwise it's easy to lose track 
+of what to do, and you have to create ad-hoc solutions every time. This project 
+model is supposed to be that structured approach.
 
-It can also be used as a template for your own projects. Feel free to build 
-upon this to get a head start.
+## Purpose
+The purpose of this project model is to help me, others who might collaborate 
+with me on my projects and other people who want to build upon this model for 
+their own projects. This model is created with software development on Github 
+in mind, but with some minor changes, it would work for other project types as 
+well.
+
+## Goal
+The goal is to create a project model that I can use for all my projects, 
+public and private.
+
+## Stakeholders
+The people interested in this project is mainly me, but also others who may be 
+interested in using this model for themselves.
 
 ## Usage
-The purpose of this project model is to be of help when working with 
-programming projects. The way to use it is to follow the step-by-step 
-[instructions defined in this document][3].
-
 If you're using this model as a template for your own projects, feel free to 
 skip any steps that doesn't fit your particular project.
 
@@ -72,7 +78,8 @@ project as a whole.
     1. Stakeholders &mdash; Who are the users? Are there any regulations that 
     affects the project?
 1. Choose an appropriate license and put the details in a file called 
-`LICENSE`.
+`LICENSE`. It's helpful to add a section in `README.md`, describing this 
+license.
 
 ### Milestone plan
 In this project model, a milestone is equivalent to a release or deliverable. 
@@ -102,7 +109,8 @@ you:
         1. Do some work. Commit often.
         1. [Write tests][19] and run them. When they pass, push the branch.
     1. Make sure that everything is [properly documented][23].
-    1. Add what you have done in the [changelog][24].
+    1. Add what you have done in the [changelog][24] (more technical) and in 
+    the [release notes][30] (more user-friendly).
     1. Push the branch a final time.
     1. Try to merge with `develop`.
     1. If there are merge issues:
@@ -122,8 +130,8 @@ completed.
 1. Create a new [release branch named as the milestone version number][26].
 1. [Run all available tests][19] until they pass.
 1. Make sure that everything is [properly documented][23].
-1. Update `README.md` as necessary, regarding instructions on installation and 
-usage.
+1. Update `README.md` as necessary, regarding instructions on 
+[installation][31] and [usage][32].
 1. [Create a new Git tag][27] named as the milestone prepended with a *v*. 
 Example: `v1.5.2`. Push everything.
 1. [Build the project][29] in at least four versions:
@@ -188,3 +196,6 @@ all changes to this project can be read in the file [CHANGELOG.md][9].
 [27]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [28]: lifecycle/milestone-release.md#create-github-release
 [29]: lifecycle/milestone-release.md#build-project
+[30]: lifecycle/milestone-execution.md#release-notes
+[31]: lifecycle/milestone-release.md#installation-instructions
+[32]: lifecycle/milestone-release.md#usage-instructions

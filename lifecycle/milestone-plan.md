@@ -7,7 +7,10 @@ as small as possible work units. For example, if you're throwing a birthday
 party, one work unit may be *Order the cake*. A work unit should be the 
 smallest thing you can do without having too much dependence on other things. 
 If we take the birthday party example again, having a work unit be *Dial the 
-phone number to the bakery* would be silly. That's way too small.
+phone number to the bakery* would be silly. That's way too small. To organise 
+things better, hierarchies are permitted. Work units are then put in the lowest 
+level of each hierarchy. Levels above denotes work packages and should not be 
+converted into Github issues.
 
 In a WBS, order of the work units is not important. It's enough to concentrate 
 on trying to create as full a picture of the project as possible. When the WBS 

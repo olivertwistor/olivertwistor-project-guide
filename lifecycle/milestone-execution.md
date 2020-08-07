@@ -44,7 +44,22 @@ developers.
 The changelog should be written to a file called `CHANGELOG.md`, be stored in 
 the repository root and follow the same format as [Keep a Changelog][4].
 
+## Release notes
+The release notes is a file that is similar to the [changelog][5], but instead 
+of detailing changes in the API, the release notes should detail changes 
+visible to the end-user. This distinction may not be as important for a library 
+(where the end-user is another developer interested in the API) as it is for an 
+application. 
+
+The types of things that should be documented in the release notes are new, 
+changed or removed functionality, changes in button or menu placements, new or 
+changed configuration options etc.
+
+The release notes should be written to a file called `RELEASE.md`, be stored in 
+the repository root and follow the same format as [Keep a Changelog][4].
+
 [1]: https://git-scm.com/
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
 [3]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
 [4]: https://keepachangelog.com/en/1.0.0/
+[5]: #changelog
