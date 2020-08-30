@@ -1,9 +1,13 @@
 # Templates folder
 In this folder, we store templates for various documents, such as readmes and 
-changelogs.
+changelogs. Each subfolder contains specialized templates for various types of 
+project, for example applications/tools and libraries. The templates in this 
+current folder are of a general character. Sections in the specialized 
+templates that don't differ from the general templates contains referential 
+links to the general template files.
 
 All these templates follow the same formatting rules, as outlined in this 
-document. Note that this document doesn't follow the formatting rules.
+document. Note that this document doesn't itself follow these formatting rules.
 
 ## Bold text
 **Bold text** is meant for instructions, explanations and discussion. This type 
