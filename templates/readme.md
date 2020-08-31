@@ -6,6 +6,9 @@ current folder are of a general character. Sections in the specialized
 templates that don't differ from the general templates contains referential 
 links to the general template files.
 
+Feel free to remove any section or paragraph in these templates that doesn't 
+suit your particular project's need.
+
 All these templates follow the same formatting rules, as outlined in this 
 document. Note that this document doesn't itself follow these formatting rules.
 
