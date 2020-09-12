@@ -39,4 +39,8 @@ like this:
 
 ## Plain text
 Plain text is meant for text that should be preserved verbatim when you publish 
-the final document.
+the final document. Within a plain text paragraph, there might be hyperlinks to 
+for example your Github profile or Github root folder. The targets of those 
+hyperlinks (and if necessary, even the text, should obviously be changed to 
+your particular project. Often, I mark these occurrences somewhere in a 
+preceding or succeeding paragraph.
