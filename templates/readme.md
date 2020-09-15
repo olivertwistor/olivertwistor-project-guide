@@ -3,8 +3,11 @@ In this folder, we store templates for various documents, such as readmes and
 changelogs. Each subfolder contains specialized templates for various types of 
 project, for example applications/tools and libraries. The templates in this 
 current folder are of a general character. Sections in the specialized 
-templates that don't differ from the general templates contains referential 
-links to the general template files.
+templates that don't differ from the general templates are simply left out. A 
+general template should be read first and then the specialized template for 
+further specialized instructions. A completely missing template file in a 
+subfolder should be interpreted as that the general template is sufficient even 
+in the specialized case.
 
 Feel free to remove any section or paragraph in these templates that doesn't 
 suit your particular project's need.

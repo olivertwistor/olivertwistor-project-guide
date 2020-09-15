@@ -13,7 +13,7 @@ the most part it's best to include the instructions right here in this
 readme.**
 
 ## Usage
-** In this section, you describe some usage examples.**
+**In this section, you describe some usage examples.**
 
 ## Licensing
 **In this section, you list the license(s) of your project. Also list licenses 
