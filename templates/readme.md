@@ -1,9 +1,19 @@
 # Templates folder
 In this folder, we store templates for various documents, such as readmes and 
-changelogs.
+changelogs. Each subfolder contains specialized templates for various types of 
+project, for example applications/tools and libraries. The templates in this 
+current folder are of a general character. Sections in the specialized 
+templates that don't differ from the general templates are simply left out. A 
+general template should be read first and then the specialized template for 
+further specialized instructions. A completely missing template file in a 
+subfolder should be interpreted as that the general template is sufficient even 
+in the specialized case.
+
+Feel free to remove any section or paragraph in these templates that doesn't 
+suit your particular project's need.
 
 All these templates follow the same formatting rules, as outlined in this 
-document. Note that this document doesn't follow the formatting rules.
+document. Note that this document doesn't itself follow these formatting rules.
 
 ## Bold text
 **Bold text** is meant for instructions, explanations and discussion. This type 
@@ -32,4 +42,8 @@ like this:
 
 ## Plain text
 Plain text is meant for text that should be preserved verbatim when you publish 
-the final document.
+the final document. Within a plain text paragraph, there might be hyperlinks to 
+for example your Github profile or Github root folder. The targets of those 
+hyperlinks (and if necessary, even the text, should obviously be changed to 
+your particular project. Often, I mark these occurrences somewhere in a 
+preceding or succeeding paragraph.
