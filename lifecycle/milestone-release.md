@@ -5,6 +5,8 @@ Release branches should be named the same as their corresponding milestone. For
 example, if the milestone is named `1.7.4`, the release branch should be named 
 `release/1.7.4`.
 
+## Release schedule
+
 ## Build project
 Depending on the programming language and environment used, the build process 
 might vary. You may be using Ant, Gradle or something else. The end result may 
