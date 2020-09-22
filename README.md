@@ -99,7 +99,7 @@ further development. Push the change to the `master` branch.
 
 ## How to contribute
 If you want to contribute to this project, please read the file 
-[CONTRIBUTING.md][4] for details.
+[CONTRIBUTING.md][5] for details.
 
 ## Licenses
 The files in this repository are licensed under a Creative Commons Attribution 
@@ -111,7 +111,7 @@ The files in this repository are licensed under a Creative Commons Attribution
 [2]: https://github.com/olivertwistor/olivertwistor-project-model
 [3]: https://github.com/olivertwistor/olivertwistor-project-model/releases
 [4]: lifecycle/repo-setup.md#create-a-github-repository
-[4]: CONTRIBUTING.md
+[5]: CONTRIBUTING.md
 [6]: lifecycle/repo-setup.md#setup-basic-labels
 [7]: templates/template-readme.md
 [8]: lifecycle/milestone-plan.md#create-issue
