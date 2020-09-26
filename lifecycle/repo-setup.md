@@ -41,19 +41,17 @@ this document, do the following:
 	1. Enter the information provided in the section [Table of basic labels][1].
 	1. Press the button *Create label*.
 
-We have now created four different priority labels, in descending priority 
-order. We will use them at a later stage when planning milestones.
-
 ### Table of basic labels
 In the following table, the basic labels are described with respect to *label 
 name*, *description* and *color*.
 
 Label name | Description | Color
 --- | --- | ---
-priority: must | Must be resolved to get the project in a functional state. | #f99
-priority: should | Really should be resolved, but leaving it doesn't break the project. | #ff9
-priority: could | Could be resolved if it doesn't affect anything else negatively and if there is time. | #9f9
-priority: would | Would be nice if resolved, but it probably will have to wait. | #99f
+bug | Bugs and security issues. | #f99
+coding | Coding features etc. | #9f9
+design | Design decisions. | #99f
+documentation | Documentation, both in code and outside of it. | #ff9
+feedback wanted | The assignee wants help from others. | #f9f
 
 
 [1]: #table-of-basic-labels
