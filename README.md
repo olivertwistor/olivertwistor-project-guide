@@ -40,10 +40,11 @@ to go back to previous steps if you need to change something.
 1. [Create a new Github repository][4].
 1. Enable issues in Settings.
 1. Remove all labels and [add the following labels][6]:
-    * `priority: must`
-    * `priority: should`
-    * `priority: could`
-    * `priority: would`
+    * `bug`
+    * `design`
+    * `coding`
+    * `documentation`
+    * `feedback wanted`
 1. Follow the [general readme template][7] as well as any specialized readme 
 template. Name that file `README.md` and put in the root of the repo.
 1. Choose an appropriate license and put the details in a file called 
