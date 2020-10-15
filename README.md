@@ -128,5 +128,5 @@ The files in this repository are licensed under a Creative Commons Attribution
 [19]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 [20]: lifecycle/milestone-release.md#build-project
 [21]: lifecycle/milestone-release.md#create-github-release
-[22]: lifecycle/project-end.md
+[22]: project-end.md
 [23]: LICENSE
