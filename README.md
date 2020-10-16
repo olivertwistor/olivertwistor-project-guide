@@ -47,8 +47,14 @@ to go back to previous steps if you need to change something.
     * `feedback wanted`
 1. Follow the [general readme template][7] as well as any specialized readme 
 template. Name that file `README.md` and put in the root of the repo.
-1. Choose an appropriate license and put the details in a file called 
-`LICENSE`.
+1. Follow the [general contributing template][24] as well as any specialized 
+contributing template. Name that file `CONTRIBUTING.md` and put in the root of 
+the repo.
+1. Follow the [general changelog template][25] as well as any specialized 
+changelog template. Name that file `CHANGELOG.md` and put in the root of the 
+repo.
+1. Follow the [general license template][26] as well as any specialized license
+template. Name that file `LICENSE` and put in the root of the repo.
 1. As long as this project is active:
     1. For each separate feature to implement (or more generally, for each 
     thing to do):
