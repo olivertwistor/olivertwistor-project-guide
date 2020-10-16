@@ -1,6 +1,6 @@
 # Readme instructions
 
-## Installation instructions
+## Installation
 In this section of the readme file, you will write step-by-step instructions on 
 how to install and configure the application, library or whatever your project 
 is. All the necessary prerequisites should also be listed, including on how to 
@@ -12,7 +12,7 @@ numbers. By using build tools such as [Ant][1] or [Gradle][2], this step may be
 easier for the user because you as the developer is in more control over 
 dependencies and prerequisites.
 
-## Usage instructions
+## Usage
 In this section of the readme file, you will write how to use the application, 
 library or whatever your project is. This is no place for a full manual, but at 
 a minimum, explain how to interact with the most common functionality. I 
