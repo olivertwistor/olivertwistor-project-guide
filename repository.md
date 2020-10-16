@@ -1,4 +1,4 @@
-# Repository setup
+# Repository
 The following instructions are tailored for Git repositories hosted by Github. 
 If you're using some other version control system (such as CVS, SVN or 
 Mercurial) or if you're using some other platform (such as Bitbucket, GitLab or 
@@ -28,8 +28,8 @@ be done (and what already has been done).
 
 ## Setup basic labels
 Labels can be attached to issues, giving further details on an issue than 
-merely its title. Github comes with a set of default labels, which I don't find 
-particularly helpful for my own projects.
+merely its title. Github comes with a set of default labels, some of which I 
+don't find particularly helpful for my own projects.
 
 1. On the repository front page, go to the *Issues* tab.
 1. Press the button *Labels*.
@@ -40,6 +40,7 @@ this document, do the following:
 	1. Press the button *New label*.
 	1. Enter the information provided in the section [Table of basic labels][1].
 	1. Press the button *Create label*.
+1. Add more labels specific for your project as needed.
 
 ### Table of basic labels
 In the following table, the basic labels are described with respect to *label 

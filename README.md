@@ -58,9 +58,9 @@ template. Name that file `README.md` and put in the root of the repo.
         1. Pick an issue that you want to work on, and [assign yourself to 
         it][9]. To simplify things, only assign yourself on unassigned issues.
         1. [Create a new feature branch][10] named with the issue number, a 
-        short description and your Github username. If you're the only 
-        developer, you don't have to include your Github username. Example: 
-        *5-blue-bg-olivertwistor*.
+        short description and your Github username. Example: 
+        *5-blue-bg-olivertwistor*. If you're the only developer, you don't have 
+        to include your Github username.
         1. As long as you're not done with the issue:
             1. [Write tests][11]. Initially, they will fail.
             1. Do some work. Commit (and push) often.
@@ -111,22 +111,22 @@ The files in this repository are licensed under a Creative Commons Attribution
 [1]: #project-instructions
 [2]: https://github.com/olivertwistor/olivertwistor-project-model
 [3]: https://github.com/olivertwistor/olivertwistor-project-model/releases
-[4]: lifecycle/repo-setup.md#create-a-github-repository
+[4]: repository.md#create-a-github-repository
 [5]: CONTRIBUTING.md
-[6]: lifecycle/repo-setup.md#setup-basic-labels
+[6]: repository.md#setup-basic-labels
 [7]: templates/template-readme.md
-[8]: lifecycle/milestone-plan.md#create-issue
-[9]: lifecycle/milestone-execution.md#assign-issues
-[10]: lifecycle/milestone-execution.md#branches
-[11]: lifecycle/milestone-execution.md#testing
-[12]: lifecycle/milestone-execution.md#documentation
-[13]: lifecycle/milestone-execution.md#changelog
-[15]: lifecycle/milestone-release.md#release-schedule
-[16]: lifecycle/milestone-release.md#release-branch-naming
-[17]: lifecycle/milestone-release.md#installation-instructions
-[18]: lifecycle/milestone-release.md#usage-instructions
+[8]: issues.md#create-issue
+[9]: issues.md#assign-issues
+[10]: branching.md
+[11]: testing.md
+[12]: documentation.md
+[13]: documentation.md#changelog
+[15]: building.md#release-schedule
+[16]: branching.md#release
+[17]: readme-instructions.md#installation
+[18]: readme-instructions.md#usage
 [19]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
-[20]: lifecycle/milestone-release.md#build-project
-[21]: lifecycle/milestone-release.md#create-github-release
-[22]: lifecycle/project-end.md
+[20]: building.md#build-project
+[21]: building.md#create-github-release
+[22]: project-end.md
 [23]: LICENSE

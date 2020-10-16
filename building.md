@@ -1,11 +1,19 @@
-# Milestone release
-
-## Release branch naming
-Release branches should be named the same as their corresponding milestone. For 
-example, if the milestone is named `1.7.4`, the release branch should be named 
-`release/1.7.4`.
+# Building
 
 ## Release schedule
+I find it difficult to know when it's time to release a new version of the 
+project I'm working on. Therefore, I think it's more convenient to decide in 
+advance on intervals in time for releases, and depending on how much work has 
+been done, set the new version number [accordingly][1].
+
+The optimal interval between releases will change between projects and how much 
+work you're going to do in that time period. You neither want to have too small 
+releases nor too big. My suggestion would be to delay setting a release 
+schedule until a bit later in the project, when you have had time to get a feel 
+of how long it takes you to be finished with an appropriate amount of work.
+
+Larger bug fixes and security patches should always be released as soon as 
+possible, though.
 
 ## Build project
 Depending on the programming language and environment used, the build process 
@@ -63,7 +71,7 @@ following items:
 This build is a little special, because it should only contain generated 
 documentation, such as Javadoc.
 
-1. Generate the documentation with an appropriate tool, for example Doxygen or 
+1. Generate the documentation with an appropriate tool, for example doxygen or 
 javadoc.
 1. If the generation tool doesn't pack the files into for example a JAR file, 
 pack them yourself in a JAR file, a ZIP file or any other appropriate 
@@ -97,24 +105,5 @@ but if this release really is one, go for it and check the box.
 1. Press the *Publish release* button. You can also save a draft by pressing 
 the *Save draft* button.
 
-## Installation instructions
-In this section of the readme file, you will write step-by-step instructions on 
-how to install and configure the application, library or whatever your project 
-is. All the necessary prerequisites should also be listed, including on how to 
-download and install those (or preferrably links to their own instructions, as 
-they are more likely to be more accurate and updated).
 
-Be as specific as possible when listing prerequisites and their version 
-numbers. By using build tools such as [Ant][1] or [Gradle][2], this step may be 
-easier for the user because you as the developer is in more control over 
-dependencies and prerequisites.
-
-## Usage instructions
-In this section of the readme file, you will write how to use the application, 
-library or whatever your project is. This is no place for a full manual, but at 
-a minimum, explain how to interact with the most common functionality. I 
-recommend including examples, especially for libraries, to show the most common 
-API calls and expected outputs.
-
-[1]: https://ant.apache.org/
-[2]: https://gradle.org/
+[1]: https://semver.org/
