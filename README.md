@@ -137,5 +137,5 @@ The files in this repository are licensed under a Creative Commons Attribution
 [22]: project-end.md
 [23]: LICENSE
 [24]: templates/template-contributing.md
-[24]: templates/template-changelog.md
-[24]: templates/template-license.md
+[25]: templates/template-changelog.md
+[26]: templates/template-license.md
