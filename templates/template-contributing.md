@@ -21,9 +21,6 @@ everyone has once been.
 Feel free to contact me through [my Github page][1] if you have any questions 
 or complaints regarding this or anything else.
 
-**Change the hyperlink target of "my Github page" to your particular Github 
-page (or wherever you want people to go to contact you.**
-
 ## Contribution ideas
 There are many ways in which you can contribute to this project. Some of them 
 are listed here.
@@ -34,16 +31,12 @@ One very practical way in which you can contribute is to take a look at the
 help out with. For information on the necessary steps for that, please read the 
 section *[How to make changes to the project][4]*.
 
-**Here is a hyperlink to the Github issue page. Change the repo portion of the 
-URL.**
-
 ### Report bugs, propose new features or changes in existing features
 All software has bugs and I would very much appreciate help with identifying and
 reporting bugs, so they can be fixed. This is a good way to contribute even if
 you aren't a programmer yourself.
 
 #### How to create a new issue
-**In this section, change the target of hyperlinks to your own repo.**
 1. Go to the [new issue][2] page.
 1. Write a short and succinct *title*.
 1. Provide more details in the *comment* field if the title isn't enough.
@@ -68,8 +61,8 @@ collaborate on issues and other things. If you need more help or want to
 discuss something else, please go to [my Github page][1] and contact me through 
 there.
 
-**Change the hyperlink target of "my Github page" to your particular Github 
-page (or wherever you want people to go to contact you.**
+**Change the hyperlinks of links 1--3 to point to this project's Github 
+repo.**
 
 
 [1]: https://github.com/olivertwistor
