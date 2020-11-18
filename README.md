@@ -1,36 +1,25 @@
 # Olivertwistor Project Model
+This is my project model that I'm using with all my programming projects. It 
+includes both instructions and templates.
 
-* [Background](#background)
-* [Purpose](#purpose)
-* [Goal](#goal)
+* [Installation][27]
 * [Usage](#usage)
-* [Project instructions][1]
-* [How to contribute](#how-to-contribute)
 * [Licenses](#licenses)
+* [Project instructions][1]
 
-## Background
-When starting a new project, whether it is software development or anything 
-else, it helps to have a structured approach. Otherwise it's easy to lose track 
-of what to do, and you have to create ad-hoc solutions every time. This project 
-model is supposed to be that structured approach.
-
-## Purpose
-The purpose of this project model is to help me, others who might collaborate 
-with me on my projects and other people who want to build upon this model for 
-their own projects. This model is created with software development on Github 
-in mind, but with some minor changes, it would work for other project types as 
-well.
-
-## Goal
-The goal is to create a project model that I can use for all my projects, 
-public and private.
-
-## Usage
-If you're using this model as a template for your own projects, feel free to 
-skip any steps that doesn't fit your particular project.
-
+## Installation
 You can either read all the documents in this repository [online on Github][2] 
 or [download them for offline use][3].
+
+## Usage
+Follow the section [Installation][27]. If you're using this model as a 
+template for your own projects, feel free to skip any steps that doesn't fit 
+your particular project.
+
+## Licenses
+The files in this repository are licensed under a [Creative Commons 
+Attribution 4.0 International][28] license. For detailed license terms, please 
+read [LICENSE][23].
 
 ## Project instructions
 For every project, go through the following list. Many of the steps are 
@@ -104,21 +93,11 @@ template. Name that file `LICENSE` and put in the root of the repo.
 to an end][22] and that visitors to the repository can't expect there to be 
 further development. Push the change to the `master` branch.
 
-## How to contribute
-If you want to contribute to this project, please read the file 
-[CONTRIBUTING.md][5] for details.
-
-## Licenses
-The files in this repository are licensed under a Creative Commons Attribution 
-4.0 International license. For detailed license terms, please read 
-[LICENSE][23].
-
 
 [1]: #project-instructions
 [2]: https://github.com/olivertwistor/olivertwistor-project-model
 [3]: https://github.com/olivertwistor/olivertwistor-project-model/releases
 [4]: repository.md#create-a-github-repository
-[5]: CONTRIBUTING.md
 [6]: repository.md#setup-basic-labels
 [7]: templates/template-readme.md
 [8]: issues.md#create-issue
@@ -139,3 +118,5 @@ The files in this repository are licensed under a Creative Commons Attribution
 [24]: templates/template-contributing.md
 [25]: templates/template-changelog.md
 [26]: templates/template-license.md
+[27]: #installation
+[28]: https://creativecommons.org/licenses/by/4.0/
