@@ -4,7 +4,16 @@
 I find it difficult to know when it's time to release a new version of the 
 project I'm working on. Therefore, I think it's more convenient to decide in 
 advance on intervals in time for releases, and depending on how much work has 
-been done, set the new version number [accordingly][1].
+been done, set the new version number [accordingly][1]. 
+
+A note on version numbers: release your 1.0.0 version as soon as possible 
+(even if your project is not "finished" or "stable", whatever that means in 
+today's world of software), especially if that project is a library. That way, 
+it will be easier for other people who use your project to be confident of 
+which new releases break their own code or workflow and which releases that 
+can be downloaded without problems. The reason to move away from 0.x releases 
+as quickly as possible is that *[Semantic Versioning][1]* allows 0.x releases 
+to break or not for any version.
 
 The optimal interval between releases will change between projects and how much 
 work you're going to do in that time period. You neither want to have too small 
