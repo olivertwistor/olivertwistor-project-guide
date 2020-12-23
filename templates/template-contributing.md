@@ -3,7 +3,6 @@ I'm happy that you are interested in contributing to this project. The open
 source community depends on people like you, and together we can make this 
 project as good as it can possibly be. Thank you!
 
-## Table of contents
 * [Code of conduct](#code-of-conduct)
 * [Contribution ideas](#contribution-ideas)
 * [How to make changes to the project][4]
