@@ -1,2 +1,5 @@
 **This file should contain the license text. For examples on various licenses, 
-please go to [choosealicense.com](choosealicense.com).**
+please go to [choosealicense.com][1].**
+
+
+[1]: http://choosealicense.com
