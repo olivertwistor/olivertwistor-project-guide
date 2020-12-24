@@ -24,8 +24,8 @@ licenses in one file called "3rd-party-licenses" if you want.**
 *Project name* is licensed under a *License name*. You can read the full 
 license terms in the file [LICENSE](LICENSE).
 
-*Third-party library 1* by *author* is licensed under a *License name*.
-*Third-party library 2* by *author* is licensed under a *License name*.
+* *Third-party library 1* by *author* is licensed under a *License name*.
+* *Third-party library 2* by *author* is licensed under a *License name*.
 
 You can read the full license terms for third-party dependencies in the file 
 [3rd-party-licenses](3rd-party-licenses).
