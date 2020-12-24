@@ -11,10 +11,7 @@ details if you want, or perhaps argue for why this issue was created.
 1. Assign a user by pressing the cogwheel besides *Assignees*. This can always 
 be altered later, so if you're not sure about to whom to assign this issue, 
 it's better to leave it empty for now.
-1. Labels should at this stage have been created. If they haven't, please 
-follow the [instructions on setting up basic labels][1] before continuing. When 
-there are basic labels setup, press the cogwheel besides *Labels* and choose 
-all labels that apply.
+1. Press the cogwheel besides *Labels* and choose all labels that apply.
 1. Leave both *Project* and *Milestone* be for now.
 1. Press the *Submit new issue* button.
 
@@ -28,6 +25,3 @@ avatar in the `Assignee` column.
 1. In the sidebar to the right and at the top is a heading called `Assignees`. 
 Either click the link `No one -- assign yourself` or click the small cogwheel 
 and select yourself.
-
-
-[1]: repo-setup.md#setup-basic-labels

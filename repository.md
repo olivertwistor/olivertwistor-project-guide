@@ -25,34 +25,3 @@ be done (and what already has been done).
 1. On the repository front page, go to the *Settings* tab.
 1. Scroll down to *Features*.
 1. Check the *Issues* checkbox.
-
-## Setup basic labels
-Labels can be attached to issues, giving further details on an issue than 
-merely its title. Github comes with a set of default labels, some of which I 
-don't find particularly helpful for my own projects.
-
-1. On the repository front page, go to the *Issues* tab.
-1. Press the button *Labels*.
-1. For each existing label, press the button *Delete*. Choose *OK* in the 
-confirmation popup.
-1. For each new label described in the section [Table of basic labels][1] in 
-this document, do the following:
-	1. Press the button *New label*.
-	1. Enter the information provided in the section [Table of basic labels][1].
-	1. Press the button *Create label*.
-1. Add more labels specific for your project as needed.
-
-### Table of basic labels
-In the following table, the basic labels are described with respect to *label 
-name*, *description* and *color*.
-
-Label name | Description | Color
---- | --- | ---
-bug | Bugs and security issues. | #f99
-coding | Coding features etc. | #9f9
-design | Design decisions. | #99f
-documentation | Documentation, both in code and outside of it. | #ff9
-feedback wanted | The assignee wants help from others. | #f9f
-
-
-[1]: #table-of-basic-labels
