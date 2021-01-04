@@ -45,11 +45,10 @@ you aren't a programmer yourself.
     1. Choose the appropriate *labels* (you may choose multiple labels if you 
     want):
         * for a bug, choose *bug*
-        * for a design decision, choose *design*
         * for a documentation related issue, choose *documentation*
-        * for a feature, choose *coding*
-        * for other things not listed here, leave the *labels* blank or create
-        new labels as appropriate
+        * for a feature or general coding, choose *enhancement*
+        * for other things not listed here, add more labels as needed by 
+        clicking on the cogwheel
     1. Leave *Project* blank.
     1. Also leave *Milestone* blank.
 1. Press the button *Submit new issue*.
