@@ -1,38 +1,13 @@
 # Building
 
-## Release schedule
-I find it difficult to know when it's time to release a new version of the 
-project I'm working on. Therefore, I think it's more convenient to decide in 
-advance on intervals in time for releases, and depending on how much work has 
-been done, set the new version number [accordingly][1]. 
-
-A note on version numbers: release your 1.0.0 version as soon as possible 
-(even if your project is not "finished" or "stable", whatever that means in 
-today's world of software), especially if that project is a library. That way, 
-it will be easier for other people who use your project to be confident of 
-which new releases break their own code or workflow and which releases that 
-can be downloaded without problems. The reason to move away from 0.x releases 
-as quickly as possible is that *[Semantic Versioning][1]* allows 0.x releases 
-to break or not for any version.
-
-The optimal interval between releases will change between projects and how much 
-work you're going to do in that time period. You neither want to have too small 
-releases nor too big. My suggestion would be to delay setting a release 
-schedule until a bit later in the project, when you have had time to get a feel 
-of how long it takes you to be finished with an appropriate amount of work.
-
-Larger bug fixes and security patches should always be released as soon as 
-possible, though.
-
 ## Build project
 Depending on the programming language and environment used, the build process 
-might vary. You may be using Ant, Gradle or something else. The end result may 
+might vary. You may be using Ant, Gradle, Maven or something else. The end result may 
 be a JAR file, and EXE file, a WAR file or something else. Regardless, there 
 are build versions that every release must have.
 
-All build scripts shall be checked into Github. For more details on how to make 
-these builds, please refer to the manual of respective build tool, such as Ant 
-or Gradle.
+All build scripts shall be checked into GitHub. For more details on how to make 
+these builds, please refer to the manual of respective build tool.
 
 ### Runnable executable or library with compiled code
 This is the most important build. It should contain the following items:
@@ -81,17 +56,17 @@ This build is a little special, because it should only contain generated
 documentation, such as Javadoc.
 
 1. Generate the documentation with an appropriate tool, for example doxygen or 
-javadoc.
+Javadoc.
 1. If the generation tool doesn't pack the files into for example a JAR file, 
 pack them yourself in a JAR file, a ZIP file or any other appropriate 
 container. The end result should be one single file containing all 
 documentation.
 
-## Create Github release
-Releases on Github provide a way to store binaries, documentation and source. 
+## Create GitHub release
+Releases on GitHub provide a way to store binaries, documentation and source. 
 Each milestone should have its own release. Here's how you create one:
 
-1. On the Github repository front page, press the *Code* tab. It may be 
+1. On the GitHub repository front page, press the *Code* tab. It may be 
 selected by default.
 1. Press the button *x releases* (where x is the number of releases the 
 repository has so far).
