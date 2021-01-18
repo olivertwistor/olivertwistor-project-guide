@@ -26,7 +26,7 @@ For every project, go through the following list. Many of the steps are
 intertwined and meant to be iterated over several times. Also, don't be afraid 
 to go back to previous steps if you need to change something.
 
-1. [Create a new Github repository][4].
+1. [Create a new GitHub repository][4].
 1. Enable issues in Settings.
 1. Edit the [list of labels][5].
 1. Follow the [general readme template][7] as well as any specialized readme 
@@ -41,16 +41,16 @@ repo.
 template. Name that file `LICENSE` and put in the root of the repo.
 1. As long as this project is active:
     1. For each separate feature to implement (or more generally, for each 
-    thing to do):
-        1. [Create a new Github issue][8] and give it appropriate labels.
+        thing to do):
+         1. [Create a new GitHub issue][8] and give it appropriate labels.
     1. As long as there are open issues that are either unassigned or assigned 
     to you:
         1. Pick an issue that you want to work on, and [assign yourself to 
         it][9]. To simplify things, only assign yourself on unassigned issues.
         1. [Create a new feature branch][10] named with the issue number, a 
-        short description and your Github username. Example: 
-        *5-blue-bg-olivertwistor*. If you're the only developer, you don't have 
-        to include your Github username.
+               short description and your GitHub username. Example: 
+                *5-blue-bg-olivertwistor*. If you're the only developer, you don't have 
+                to include your GitHub username.
         1. As long as you're not done with the issue:
             1. [Write tests][11]. Initially, they will fail.
             1. Do some work. Commit (and push) often.
@@ -80,8 +80,8 @@ template. Name that file `LICENSE` and put in the root of the repo.
         * source code including tests
         * generated documentation files
     1. Merge the release branch with the `master` and `develop` branches.
-    1. [Create a new Github release][21] from the created tag. Describe the 
-    changes made since last release.
+        1. [Create a new GitHub release][21] from the created tag. Describe the 
+          changes made since last release.
     1. Delete all the feature, hotfix and release branches that was created for 
     the release.
 1. Update `README.md` [with information that the project has permanently come 
