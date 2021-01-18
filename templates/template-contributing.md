@@ -17,7 +17,7 @@ username is a human being. If someone makes a mistake or makes a "stupid"
 comment or question, please bear in mind that they may be a beginner, something 
 everyone has once been.
 
-Feel free to contact me through [my GitHub page][1] if you have any questions 
+Feel free to contact me through [my Github page][1] if you have any questions 
 or complaints regarding this or anything else.
 
 ## Contribution ideas
@@ -50,16 +50,19 @@ you aren't a programmer yourself.
         * for core functionality, choose *core*
         * for quality of life things, choose *polish*
         * for other things not listed here, add more labels as needed by 
-        clicking on the cogwheel
+           clicking on the cogwheel
     1. Leave *Project* blank.
-    1. Also leave *Milestone* blank. This is best determined at a later date.
+    1. Also leave *Milestone* blank.
 1. Press the button *Submit new issue*.
 
 ## How to make changes to the project
-[GitHub help][5] is a very good resource on how to fork repositories, 
+[Github help][5] is a very good resource on how to fork repositories, 
 collaborate on issues and other things. If you need more help or want to 
-discuss something else, please go to [my GitHub page][1] and contact me through 
+discuss something else, please go to [my Github page][1] and contact me through 
 there.
+
+**Change the hyperlinks of links 1--3 to point to this project's Github 
+repo.**
 
 
 [1]: https://github.com/olivertwistor

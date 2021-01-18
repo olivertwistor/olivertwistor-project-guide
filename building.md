@@ -1,19 +1,13 @@
-# Milestone release
-
-## Release branch naming
-Release branches should be named the same as their corresponding milestone. For 
-example, if the milestone is named `1.7.4`, the release branch should be named 
-`release/1.7.4`.
+# Building
 
 ## Build project
 Depending on the programming language and environment used, the build process 
-might vary. You may be using Ant, Gradle or something else. The end result may 
+might vary. You may be using Ant, Gradle, Maven or something else. The end result may 
 be a JAR file, and EXE file, a WAR file or something else. Regardless, there 
 are build versions that every release must have.
 
-All build scripts shall be checked into Github. For more details on how to make 
-these builds, please refer to the manual of respective build tool, such as Ant 
-or Gradle.
+All build scripts shall be checked into GitHub. For more details on how to make 
+these builds, please refer to the manual of respective build tool.
 
 ### Runnable executable or library with compiled code
 This is the most important build. It should contain the following items:
@@ -61,18 +55,18 @@ following items:
 This build is a little special, because it should only contain generated 
 documentation, such as Javadoc.
 
-1. Generate the documentation with an appropriate tool, for example Doxygen or 
-javadoc.
+1. Generate the documentation with an appropriate tool, for example doxygen or 
+Javadoc.
 1. If the generation tool doesn't pack the files into for example a JAR file, 
 pack them yourself in a JAR file, a ZIP file or any other appropriate 
 container. The end result should be one single file containing all 
 documentation.
 
-## Create Github release
-Releases on Github provide a way to store binaries, documentation and source. 
+## Create GitHub release
+Releases on GitHub provide a way to store binaries, documentation and source. 
 Each milestone should have its own release. Here's how you create one:
 
-1. On the Github repository front page, press the *Code* tab. It may be 
+1. On the GitHub repository front page, press the *Code* tab. It may be 
 selected by default.
 1. Press the button *x releases* (where x is the number of releases the 
 repository has so far).
@@ -83,13 +77,17 @@ example `v1.7.4`.
 1. In the dropdown list *Target*, choose the `master` branch.
 1. Write the same in *Release title* as in *Tag version*.
 1. Write release notes in the text box *Describe this release*. This should be 
-a more user-friendly version of the `CHANGELOG.md` file.
+the most recent update to the `RELEASE.md` file, or at least a condensed 
+version of that.
 1. *Attach* four files:
     * runnable executable or library with compiled code
     * source code without tests
     * source code including tests
     * generated documentation files
-1. Leave the checkbox regarding pre-release empty. I don't really use 
-pre-releases, but if this release really is one, go for it and check the box.
+1. Leave the checkbox regarding pre-release empty. I don't use pre-releases, 
+but if this release really is one, go for it and check the box.
 1. Press the *Publish release* button. You can also save a draft by pressing 
 the *Save draft* button.
+
+
+[1]: https://semver.org/
