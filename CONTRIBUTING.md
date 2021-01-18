@@ -47,6 +47,8 @@ you aren't a programmer yourself.
         * for a bug, choose *bug*
         * for a documentation related issue, choose *documentation*
         * for a feature or general coding, choose *enhancement*
+        * for core functionality, choose *core*
+        * for quality of life things, choose *polish*
         * for other things not listed here, add more labels as needed by 
         clicking on the cogwheel
     1. Leave *Project* blank.

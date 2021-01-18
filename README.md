@@ -28,6 +28,7 @@ to go back to previous steps if you need to change something.
 
 1. [Create a new Github repository][4].
 1. Enable issues in Settings.
+1. Edit the [list of labels][5].
 1. Follow the [general readme template][7] as well as any specialized readme 
 template. Name that file `README.md` and put in the root of the repo.
 1. Follow the [general contributing template][24] as well as any specialized 
@@ -92,6 +93,7 @@ further development. Push the change to the `master` branch.
 [2]: https://github.com/olivertwistor/olivertwistor-project-model
 [3]: https://github.com/olivertwistor/olivertwistor-project-model/releases
 [4]: repository.md#create-a-github-repository
+[5]: repository.md#labels
 [7]: templates/template-readme.md
 [8]: issues.md#create-issue
 [9]: issues.md#assign-issues
