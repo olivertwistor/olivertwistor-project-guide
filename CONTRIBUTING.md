@@ -17,7 +17,7 @@ username is a human being. If someone makes a mistake or makes a "stupid"
 comment or question, please bear in mind that they may be a beginner, something 
 everyone has once been.
 
-Feel free to contact me through [my Github page][1] if you have any questions 
+Feel free to contact me through [my GitHub page][1] if you have any questions 
 or complaints regarding this or anything else.
 
 ## Contribution ideas
@@ -47,6 +47,8 @@ you aren't a programmer yourself.
         * for a bug, choose *bug*
         * for a documentation related issue, choose *documentation*
         * for a feature or general coding, choose *enhancement*
+        * for core functionality, choose *core*
+        * for quality of life things, choose *polish*
         * for other things not listed here, add more labels as needed by 
         clicking on the cogwheel
     1. Leave *Project* blank.
@@ -54,9 +56,9 @@ you aren't a programmer yourself.
 1. Press the button *Submit new issue*.
 
 ## How to make changes to the project
-[Github help][5] is a very good resource on how to fork repositories, 
+[GitHub help][5] is a very good resource on how to fork repositories, 
 collaborate on issues and other things. If you need more help or want to 
-discuss something else, please go to [my Github page][1] and contact me through 
+discuss something else, please go to [my GitHub page][1] and contact me through 
 there.
 
 

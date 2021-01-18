@@ -4,12 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog][1] and this project adheres to 
 [Semantic Versioning 2.0.0][2].
 
-## v0.2.0
+## Unreleased
+
+* Changed
+  * The default labels are back. Some of GitHub's labels are removed, some custom ones are added.
+* Removed
+  * WBS.
+
+## 0.2.0
 * Added
     * Expanded explanations for WBS.
     * Template for the main project plan document.
 
-## v0.1.0
+## 0.1.0
 
 * Added
     * Step-by-step short instructions on how to plan, work with, release and 
