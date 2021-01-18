@@ -60,7 +60,7 @@ template. Name that file `LICENSE` and put in the root of the repo.
         1. Push the branch a final time.
         1. Try to merge with `develop`.
         1. If there are merge issues:
-            1. Resolve them to the best of your abilites. If in doubt, please 
+            1. Resolve them to the best of your abilities. If in doubt, please 
             ask the other developers.
             1. Run all available tests again. When they pass, push the merge.
             1. Close the issue.

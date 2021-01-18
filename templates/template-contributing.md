@@ -48,7 +48,7 @@ you aren't a programmer yourself.
         * for a documentation related issue, choose *documentation*
         * for a feature or general coding, choose *enhancement*
         * for other things not listed here, add more labels as needed by 
-        clicking on the cogwheel
+           clicking on the cogwheel
     1. Leave *Project* blank.
     1. Also leave *Milestone* blank.
 1. Press the button *Submit new issue*.
