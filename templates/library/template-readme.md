@@ -2,5 +2,4 @@
 * [Usage](#usage)
 
 ## Usage
-**Describe the most important parts of the public API. If available, provide a 
-link to the API docs or equivalent.**
+**Describe the most important parts of the public API. If available, provide a link to the API docs or equivalent.**
