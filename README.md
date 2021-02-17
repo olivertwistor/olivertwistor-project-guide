@@ -16,71 +16,53 @@ Follow the section [Installation][27]. If you're using this model as a template 
 The files in this repository are licensed under a [Creative Commons Attribution 4.0 International][28] license. For detailed license terms, please read [LICENSE][23].
 
 ## Project instructions
-For every project, go through the following list. Many of the steps are intertwined and meant to be iterated over several times. Also, don't be afraid to go back to previous steps if you need to change something.
+For every project, go through the following list. Many of the steps are intertwined and meant to be iterated over several times. Also, don't be afraid to go back to previous steps if you need to change or add something. For example, if you are working on issues (step 8) and you discover that you have to add things to the WBS, go back to step 3 and add them, then make the necessary adjusments in steps 4 through 7 before resuming your work at step 8.
 
-1. [Create a new GitHub repository][4].
-1. Enable issues in Settings.
-1. Edit the [list of labels][5].
-1. Follow the [general readme template][7] as well as any specialized readme template. Name that file `README.md` and put in the root of the repo.
-1. Follow the [general contributing template][24] as well as any specialized contributing template. Name that file `CONTRIBUTING.md` and put in the root of the repo.
-1. Follow the [general changelog template][25] as well as any specialized changelog template. Name that file `CHANGELOG.md` and put in the root of the repo.
-1. Follow the [general license template][26] as well as any specialized license template. Name that file `LICENSE` and put in the root of the repo.
-1. As long as this project is active:
-    1. For each separate feature to implement (or more generally, for each thing to do):
-         1. [Create a new GitHub issue][8] and give it appropriate labels.
-          2. Add the issue to either a new or existing [milestone][6]. Don't be afraid to make a hasty decision; which milestone an issue belongs to can easily be changed later.
-     1. As long as there are open milestones:
-         1. Open the milestone with the lowest version number.
-        1. As long as there are open issues that are either unassigned or assigned to you:
-            1. Pick an issue that you want to work on, and [assign yourself to it][9]. To simplify things, only assign yourself on unassigned issues.
-           1. [Create a new feature branch][10] named with the issue number, a short description and your GitHub username. Example:  *5-blue-bg-olivertwistor*. If you're the only developer, you don't have to include your GitHub username.
-           1. As long as you're not done with the issue:
-               1. [Write tests][11]. Initially, they will fail.
-               1. Do some work. Commit (and push) often.
-               1. Verify that the tests pass. If they do, push everything a final time. If they don't, repeat the previous step.
-           1. Make sure that everything is [properly documented][12].
-           1. Add what you have done in the [changelog][13].
-           1. Push the branch a final time.
-           1. Try to merge with `develop`.
-           1. If there are merge issues:
-               1. Resolve them to the best of your abilities. If in doubt, please ask the other developers.
-               1. Run all available tests again. When they pass, push the merge.
-          1. Close the issue.
-        1. Create a new [release branch named after the milestone][16].
-        1. [Run all available tests][11] until they pass.
-        1. Make sure that everything is [properly documented][12].
-        1. Update `README.md` as necessary, specifically regarding instructions on [installation][17] and [usage][18].
-        1. [Create a new Git tag][19] named as the release, prepended with *v*. Example: `v1.5.2`. Push everything.
-        1. [Build the project][20].
-        1. Merge the release branch with the `master` and `develop` branches.
-        1. [Create a new GitHub release][21] from the created tag. Describe the changes made since last release.
-        1. Delete all the feature, hotfix and release branches that was created for the release.
-1. Update `README.md` [with information that the project has permanently come to an end][22] and that visitors to the repository can't expect there to be further development. Push the change to the `master` branch.
+Each of these list items is described in further detail in the subsequent sections.
+
+1. [Create a new GitHub repository.][4]
+1. [Add the basic repository documents.][5]
+1. [Create a work breakdown structure (WBS).][10]
+1. Create a network diagram based on the WBS.
+1. Create GitHub issues based on the WBS.
+1. Add appropriate milestones based on the network diagram.
+1. Assign all GitHub issues to their respective milestone based on the network diagram.
+1. Work on issues belonging to the first unreleased milestone.
+1. Create a release based on the milestone in step 8.
+
+### Create a new repository
+
+These instructions presume that you already have a Github account and are logged in.
+
+1. Go to https://github.com/new
+1. Choose a *Repository name*.
+1. Write a short *Description* of what the project is about.
+1. Choose between making the repository *Public* or *Private*. Public repositories are to be preferred since making it open source gives back to the community. For client work and the like, choose *Private*.
+1. Press the button *Create repository*.
+
+### Add basic documentation
+
+The repository should have the following repository documentation, placed in the root of the repository:
+
+* `README.md` ([template][6])
+* `LICENSE` ([template][7])
+* `CONTRIBUTING.md` ([template][8])
+* `CHANGELOG.md` ([template][9])
+
+### Create a work breakdown structure
+
+In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed.
 
 
 [1]: #project-instructions
 [2]: https://github.com/olivertwistor/olivertwistor-project-model
 [3]: https://github.com/olivertwistor/olivertwistor-project-model/releases
-[4]: repository.md#create-a-github-repository
-[5]: repository.md#labels
-[6]: milestones.md
-[7]: templates/template-readme.md
-[8]: issues.md#create-issue
-[9]: issues.md#assign-issues
-[10]: branching.md
-[11]: testing.md
-[12]: documentation.md
-[13]: documentation.md#changelog
-[16]: branching.md#release
-[17]: readme-instructions.md#installation
-[18]: readme-instructions.md#usage
-[19]: https://git-scm.com/book/en/v2/Git-Basics-Tagging
-[20]: building.md#build-project
-[21]: building.md#create-github-release
-[22]: project-end.md
+[4]: #create-a-new-repository
+[5]: #add-basic-documentation
+[6]: templates/template-readme.md "README.md template"
+[7]: templates/template-license.md "LICENSE template"
+[8]: templates/template-contributing.md "CONTRIBUTING.md template"
+[9]: templates/template-changelog.md "CHANGELOG template"
+[10]: #create-a-work-breakdown-structure
 [23]: LICENSE
-[24]: templates/template-contributing.md
-[25]: templates/template-changelog.md
-[26]: templates/template-license.md
-[27]: #installation
 [28]: https://creativecommons.org/licenses/by/4.0/
