@@ -23,7 +23,7 @@ Each of these list items is described in further detail in the subsequent sectio
 1. [Create a new GitHub repository.](#create-a-new-repository)
 1. [Add the basic repository documents.](#add-basic-documentation)
 1. [Create a work breakdown structure (WBS).](#create-a-work-breakdown-structure)
-1. Create a network diagram based on the WBS.
+1. [Create a network diagram](#create-a-network-diagram) based on the WBS.
 1. Create GitHub issues based on the WBS.
 1. Add appropriate milestones based on the network diagram.
 1. Assign all GitHub issues to their respective milestone based on the network diagram.
@@ -51,4 +51,27 @@ The repository should have the following repository documentation, placed in the
 
 ### Create a work breakdown structure
 
-In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed.
+In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed. This can be difficult to do, especially in software development where there are so many unknowns in the beginning. Don't worry that you might not capture all tasks in one go. Just try to capture as many tasks as possible; you can always return to this step later.
+
+It's a good idea to store the WBS as a mind map. That way you can have multiple levels of granularity over your tasks, in order to have better overview of all tasks. The order of the tasks are not important (you will order them at a later step). Try to make each task a manageable size, like four to eight hours. If it would be larger, it's probably more suitable to be a work package (closer to the middle in the mind map).
+
+![An example of a WBS as a mind map](examples/wbs-example.png)
+
+This image shows a (partial) WBS of a calculator app. Note that only the outermost nodes in the map are considered to be tasks. All other are work packages &mdash; groups of tasks that are connected in some way.
+
+The tasks in this example are:
+
+* Design the buttons
+* Lay out all the UI components
+* Write help text
+* Make all strings translatable
+* Make all numbers locale-aware
+* Make the app fully keyboard accessible
+* Define basic arithmetic
+* Define statistical functions
+
+### Create a network diagram
+
+
+
+[1]: #installation
