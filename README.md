@@ -18,18 +18,6 @@ The files in this repository are licensed under a [Creative Commons Attribution 
 ## Project instructions
 In this section, I will describe the steps to take for a project, from start to finish. Try to follow each step in the order they are written, but don't be afraid to go back to previous steps if you need to add or change something. After all, software development is an iterative and incremental process.
 
-Each of these list items is described in further detail in the subsequent sections.
-
-1. [Create a new GitHub repository.](#create-a-new-repository)
-1. [Add the basic repository documents.](#add-basic-documentation)
-1. [Create a work breakdown structure (WBS).](#create-a-work-breakdown-structure)
-1. [Create a network diagram](#create-a-network-diagram) based on the WBS.
-1. Create GitHub issues based on the WBS.
-1. Add appropriate milestones based on the network diagram.
-1. Assign all GitHub issues to their respective milestone based on the network diagram.
-1. Work on issues belonging to the first unreleased milestone.
-1. Create a release based on the milestone in step 8.
-
 ### Create a new repository
 
 These instructions presume that you already have a Github account and are logged in.
@@ -53,7 +41,7 @@ The repository should have the following repository documentation, placed in the
 
 In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed. This can be difficult to do, especially in software development where there are so many unknowns in the beginning. Don't worry that you might not capture all tasks in one go. Just try to capture as many tasks as possible; you can always return to this step later.
 
-It's a good idea to store the WBS as a mind map or a nested list. That way you can have multiple levels of granularity over your tasks, in order to have better overview of all tasks. The order of the tasks are not important (you will order them at a later step). Try to make each task a manageable size, like four to eight hours. If it would be larger, it's probably more suitable to be a work package (closer to the middle in the mind map).
+It's a good idea to store the WBS as a mind map or a nested list. That way you can have multiple levels of granularity over your tasks, in order to have better overview of all tasks. Neither the order of the tasks nor their priority are important (you will deal with that at later steps). Try to make each task a manageable size, like four to eight hours. If it would be larger, it's probably more suitable to be a work package (closer to the middle in the mind map).
 
 ![An example of a WBS as a mind map](examples/wbs-example.png)
 
@@ -69,6 +57,7 @@ The tasks in this example are:
 * Make the app fully keyboard accessible
 * Define basic arithmetic
 * Define statistical functions
+* Enable exporting calculations to text file.
 
 The same WBS presented in a nested list would look like this:
 
@@ -81,8 +70,64 @@ The same WBS presented in a nested list would look like this:
         1. Make all numbers locale-aware.
     1. Make the app fully keyboard accessible.
 1. Define the mathematical operations.
+    1. Define basic arithmetic.
+    1. Define statistical functions.
+1. Enable exporting calculations to text file.
+
+In my example, the task *Enable exporting calculations to text file* could probably be broken down further and thus would be more suited as a work package. While working with your project, you will undoubtedly discover things like this. When it happens, you can go back back to this step and add to the WBS.
+
+Check in the work breakdown structure file(s) into version control under the folder `project-files`. The file name(s) should begin with `wbs-`.
 
 ### Create a network diagram
+
+With the work breakdown structure in place, it's now time to create a network diagram. This is the step where you define an order to all tasks, as well their dependency relationships. Some tasks may be quite independent and could be worked on whenever and in parallel with other tasks, but most tasks are dependent on the completion of other tasks or have themselves dependent tasks.
+
+A network diagram can either be created as a mind map or a table. I'll show an example of a mind map first. I'll use the same calculator app example as in the previous section.
+
+![An example of a network diagram as a mind map](examples/network-example.png)
+
+The same network diagram presented in a table would look like this:
+
+| ID    | Name                                       | Depends upon              |
+| ----- | ------------------------------------------ | ------------------------- |
+|       | *Project start*                            |                           |
+| 1.1   | Design the buttons.                        |                           |
+| 1.2   | Lay out all the UI components.             |                           |
+| 1.3   | Write help text.                           |                           |
+| 1.4.1 | Make all strings translatable.             | 1.3                       |
+| 1.4.2 | Make all numbers locale-aware.             | 1.1, 1.2                  |
+| 1.5   | Make the app fully keyboard accessible.    | 1.2                       |
+| 2.1   | Define basic arithmetic.                   |                           |
+| 2.2   | Define statistical functions.              | 2.1                       |
+| 3     | Enable exporting calculation to text file. | 2.1                       |
+|       | *Project end*                              | 1.4.1, 1.4.2, 1.5, 2.2, 3 |
+|       |                                            |                           |
+
+Note that the ID's correspond to the tasks in the nested list from the previous section. Also, note that I added a *Project start* and a *Project end*. Obviously, a work breakdown structure and network diagram is much more detailed than this in a real-life project.
+
+As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with task 1.2, you may proceed with task 1.5, but not task 1.4.2 before you're also finished with task 1.1.
+
+Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will discuss those in the next section.
+
+Check in the network diagram file(s) into version control under the folder `project-files`. The file name(s) should begin with `network-`.
+
+### Add milestones
+
+x
+
+### Create GitHub issues
+
+x
+
+
+
+### Work on issues
+
+x
+
+### Create a release
+
+x
 
 
 
