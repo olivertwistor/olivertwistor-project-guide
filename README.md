@@ -146,7 +146,7 @@ Milestones can be found at the GitHub repo URL appended with `/milestones`, for 
 
 Each milestone represents a release, and should contain all issues that need to be resolved for that release. Since milestones represent releases, they should share names and follow [Semantic Versioning 2.0.0](https://semver.org/). The naming pattern is described next.
 
-Semantic Versioning dictates that version numbers follow a specific pattern: `MAJOR.MINOR.FIX`. A *3.1.4* version number means that it's the third major release of this project, the second minor release within that major release, and the fifth fix within that minor release. You may use the following list to determine whether a particular milestone constitutes a `MAJOR`, `MINOR` or `FIX` version.
+Semantic Versioning dictates that version numbers follow a specific pattern: `MAJOR.MINOR.FIX`. A *3.1.4* version number means that it's the third major release of this project, the second minor release within that major release (the first `MINOR` is always a zero), and the fifth fix within that minor release (the first `FIX` is always a zero). You may use the following list to determine whether a particular milestone constitutes a `MAJOR`, `MINOR` or `FIX` version.
 
 * Applications
     * Major releases mean big changes or additions in functionality, resulting in brand new ways of using the application.
@@ -155,8 +155,23 @@ Semantic Versioning dictates that version numbers follow a specific pattern: `MA
 * Libraries
 
     * Major releases mean breaking changes in your public API, for example a removed method or a changed return type of a method. For a user of your library, to upgrade to a new major release typically has to involve changes to client code.
+    
     * Minor releases mean non-breaking changes, for example added classes and methods. For a user of your library, to upgrade to a new minor release should never require changes to client code.
+    
     * Fixes mean bug fixes, other changes to your private API or internal changes to methods that don't affect the public API. Note that security bug fixes should result in a new major release (if really serious) or at least a minor release. This will tell the user that it's probably best to upgrade.
+    
+
+For example, you could give the milestones of the calculator app the following version numbers.
+
+| Milestone   | Version number | Reasoning                                                    |
+| ----------- | -------------- | ------------------------------------------------------------ |
+| MS 1        | 1.0.0          | It's the first release of a functioning application.         |
+| MS 2        | 1.0.1          | It could be argued that added help text constitutes a `MINOR` release, and that the version number should have been 1.1.0, but I don't think of help text, tooltips etc. as added *functionality*. Perhaps I would reconsider if the help text were considerable, perhaps with full-fledged downloadable examples, but with this kind of application, the help text would be rather limited. |
+| MS 3        | 1.0.2          | Again, it could be argued that added accessibility and localization constitutes a `MINOR` release. It really comes down to a judgement call. |
+| MS 4        | 2.0.0          | I think that adding statistical functions is more than a `MINOR` release because of added functionality. When going from a standard calculator to providing statistical functions, it becomes almost an entirely new application. The main reason for this being a `MAJOR` release instead of a `MINOR` one is that I would think that the user base changes (or at least expands). |
+| Project end | 2.1.0          | A new functionality has been added: exports.                 |
+
+As you can see, deciding on version numbers can be tricky, and it's more of an art than a science. The most important thing is consistency, though. Version numbering is more important for libraries than for application, because library users need to know which upgrades can be done more or less automatically, and which upgrades need changes in their own applications or libraries.
 
 ### Create GitHub issues
 
