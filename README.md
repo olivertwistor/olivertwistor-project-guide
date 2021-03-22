@@ -104,9 +104,7 @@ The same network diagram presented in a table would look like this:
 
 Note that the ID's correspond to the tasks in the nested list from the previous section. Also, note that I added a *Project start* and a *Project end*. Obviously, a work breakdown structure and network diagram is much more detailed than this in a real-life project.
 
-As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with task 1.2, you may proceed with task 1.5, but not task 1.4.2 before you're also finished with task 1.1.
-
-Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will discuss those in the next section.
+As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with task 1.2, you may proceed with task 1.5, but not task 1.4.2 before you're also finished with task 1.1. Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will discuss those in the next section.
 
 Check in the network diagram file(s) into version control under the folder `project-files`. The file name(s) should begin with `network-`.
 
@@ -175,13 +173,21 @@ As you can see, deciding on version numbers can be tricky, and it's more of an a
 
 ### Create GitHub issues
 
-x
+Now it's time to create issues based on the network diagram. For each task in the diagram, do the following.
 
-
+1. On the repository front page, press the *Issues* tab.
+1. Press the *New issue* button.
+1. Write a short but descriptive *Title*. Example: `Make all buttons have yellow background and pink text colour`.
+1. If you want to write more than just that short description, feel free to write it in the *Leave a comment* text box. Here you can write implementation details if you want, or perhaps argue for why this issue was created.
+1. Assign a user by pressing the cogwheel besides *Assignee*. This can be altered later, so if you're not sure about to whom to assign this issue, it's better to leave it empty for now.
+1. Press the cogwheel besides *Labels* and choose all labels that apply.
+1. Leave *Project* empty. In this model, I'm not using GitHub projects, but if you do, feel free to select an appropriate value here.
+1. Select the appropriate *Milestone* from the network diagram.
+1. Press the *Submit new issue* button.
 
 ### Work on issues
 
-x
+Whenever you are ready to work on an issue, take a look at the closest milestone that's still open. In there, pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues (see the network diagram). If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section "[Create GitHub issues](#create-github-issues)").
 
 ### Create a release
 
