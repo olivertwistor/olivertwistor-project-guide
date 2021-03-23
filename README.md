@@ -5,6 +5,18 @@ This is my project model that I'm using with all my programming projects. It inc
 * [Usage](#usage)
 * [Licenses](#licenses)
 * [Project instructions](#project-instructions)
+    * [Create a new repository](#create-a-new-repository)
+    * [Add basic documentation](#add-basic-documentation)
+    * [Create a work breakdown structure](#create-a-work-breakdown-structure)
+    * [Create a network diagram](#create-a-network-diagram)
+    * [Add milestones](#add-milestones)
+        * [Milestones in GitHub](#milestones-in-github)
+    * [Create GitHub issues](#create-github-issues)
+    * [Work on issues](#work-on-issues)
+        * [Branching](#branching)
+        * [Testing](#testing)
+        * [Closing an issue](#closing-an-issue)
+    * [Create a release](#create-a-release)
 
 ## Installation
 You can either read all the documents in this repository [online on Github](https://github.com/olivertwistor/olivertwistor-project-model) or [download them for offline use](https://github.com/olivertwistor/olivertwistor-project-model/releases).
