@@ -177,7 +177,7 @@ Now it's time to create issues based on the network diagram. For each task in th
 
 1. On the repository front page, press the *Issues* tab.
 1. Press the *New issue* button.
-1. Write a short but descriptive *Title*. Example: `Make all buttons have yellow background and pink text colour`.
+1. Write a short but descriptive *Title*. Example: `Make all strings translatable`.
 1. If you want to write more than just that short description, feel free to write it in the *Leave a comment* text box. Here you can write implementation details if you want, or perhaps argue for why this issue was created.
 1. Assign a user by pressing the cogwheel besides *Assignee*. This can be altered later, so if you're not sure about to whom to assign this issue, it's better to leave it empty for now.
 1. Press the cogwheel besides *Labels* and choose all labels that apply.
@@ -187,7 +187,41 @@ Now it's time to create issues based on the network diagram. For each task in th
 
 ### Work on issues
 
-Whenever you are ready to work on an issue, take a look at the closest milestone that's still open. In there, pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues (see the network diagram). If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section "[Create GitHub issues](#create-github-issues)").
+Whenever you are ready to work on an issue, take a look at the closest milestone that's still open. In there, pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues (see the network diagram). If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section, "[Create GitHub issues](#create-github-issues)").
+
+#### Branching
+
+All my projects follow the same branching model, [Vincent Driessen's branching model][2]. To learn more about the basics of Git branches, I refer you to the [Git website][3].
+
+The basics of the branching model is that released code is on the `master` branch, tested but not released code on `develop` and each issue on its own `feature/` or `hotfix/` branch. Releases are on a `release/` branch until they are fully released.
+
+Let's say you have decided to work on the issue *Make all strings translatable* (task 1.4.1 in the network diagram). You have assigned yourself to the issue and are about to start working. The first thing you should do is to create a new feature branch. That should include the GitHub issue number, a shortened version of the issue name, and if you're not the only developer, your initials or something else identifying that it is *your* branch. Examples (assume that task 1.4.1 has GitHub issue number 5, and I my initials are "jn"):
+
+* `5-translatable-strings`; or
+* `5-translatable-strings-jn`
+
+It's strictly not necessary to include the shortened version of the issue name for uniqueness' sake, but I find it easier to remember what the branch is about than just having the issue number (and the initials).
+
+While working on your issue, commit often so each commit won't have too many code changes. That way, it will be easy for you and others to see what's done and if something went wrong, where. Don't be afraid to push your changes to the remote repository, either. That way, other contributors and even visitors to your project's GitHub page can see your progress.
+
+#### Testing
+
+Testing is a good thing. It should be done wherever and whenever feasible. I'm not very strict about it, though. Sergey Kolodiy have written an excellent [article about unit testing][4].
+
+Each project should detail the testing frameworks in use, in their respective `README.md` file. Test code should be committed to the Git repository so other contributors can benefit from it.
+
+#### Closing an issue
+
+When you are done working with an issue, it's time to close it on GitHub. But before you do that, please follow this checklist:
+
+1. Make sure that every test passes, and that your code hasn't broken anything else in the code.
+1. Commit and push the feature branch one final time.
+1. Try to merge your feature branch with the `develop` branch.
+1. If there are no merge conflicts, proceed to the next step. Otherwise, read on:
+    1. Resolve all merge conflicts. If you're unsure of whose code is the correct one, yours or that of the contributor who last pushed to `develop`, contact them to discuss before going further.
+    1. Make sure that every test passes, again, and that your merge hasn't broken anything else in the code.
+    1. Commit and push the `develop` branch.
+1. Close the GitHub issue. You may write a comment about if you want, but that's not mandatory. I use to write "Done." or something similar to denote that I haven't just closed the issue for another reason, for example if the issue is no longer applicable.
 
 ### Create a release
 
@@ -196,3 +230,6 @@ x
 
 
 [1]: #installation
+[2]: https://nvie.com/posts/a-successful-git-branching-model/
+[3]: https://git-scm.com/
+[4]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
