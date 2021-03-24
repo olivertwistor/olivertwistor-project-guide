@@ -233,13 +233,11 @@ When you are done working with an issue, it's time to close it on GitHub. But be
     1. Resolve all merge conflicts. If you're unsure of whose code is the correct one, yours or that of the contributor who last pushed to `develop`, contact them to discuss before going further.
     1. Make sure that every test passes, again, and that your merge hasn't broken anything else in the code.
     1. Commit and push the `develop` branch.
-1. Close the GitHub issue. You may write a comment about if you want, but that's not mandatory. I use to write "Done." or something similar to denote that I haven't just closed the issue for another reason, for example if the issue is no longer applicable.
+1. Close the GitHub issue. You may write a comment about it if you want, but that's not mandatory. Usually I write "Done." or something similar to denote that I haven't just closed the issue for another reason, for example if the issue is no longer applicable.
 
 ### Create a release
 
 When all issues within a milestone is closed, it's time to create a new release.
-
-
 
 [1]: #installation
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
