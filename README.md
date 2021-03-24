@@ -6,15 +6,16 @@ This is my project model that I'm using with all my programming projects. It inc
 * [Licenses](#licenses)
 * [Project instructions](#project-instructions)
     * [Create a new repository](#create-a-new-repository)
-    * [Add basic documentation](#add-basic-documentation)
+    * [Add basic documentation][5]
     * [Create a work breakdown structure](#create-a-work-breakdown-structure)
     * [Create a network diagram](#create-a-network-diagram)
     * [Add milestones](#add-milestones)
         * [Milestones in GitHub](#milestones-in-github)
-    * [Create GitHub issues](#create-github-issues)
+    * [Create GitHub issues][6]
     * [Work on issues](#work-on-issues)
         * [Branching](#branching)
         * [Testing](#testing)
+        * [Documentation](#documentation)
         * [Closing an issue](#closing-an-issue)
     * [Create a release](#create-a-release)
 
@@ -199,7 +200,7 @@ Now it's time to create issues based on the network diagram. For each task in th
 
 ### Work on issues
 
-Whenever you are ready to work on an issue, take a look at the closest milestone that's still open. In there, pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues (see the network diagram). If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section, "[Create GitHub issues](#create-github-issues)").
+Whenever you are ready to work on an issue, take a look at the closest milestone that's still open. In there, pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues (see the network diagram). If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section, [Create GitHub issues][6].
 
 #### Branching
 
@@ -222,24 +223,63 @@ Testing is a good thing. It should be done wherever and whenever feasible. I'm n
 
 Each project should detail the testing frameworks in use, in their respective `README.md` file. Test code should be committed to the Git repository so other contributors can benefit from it.
 
+#### Documentation
+
+Documentation is very important, both for your own sake and for your fellow contributors. When working with others or when I'm reviewing other people's code, I often find myself having to closely study the code due to lack of documentation. Ideally, you should be able to get a grasp of what a class or interface, a method or function, or a chunk of code does by only looking at the documentation instead of having to delve into the code. 
+
+I put a lot of effort on documenting and also formatting code in a nice, readable way. I value that more than cranking out code. Your code may be the most efficient, most robust, most secure code out there, but if your program is all a poorly formatted single line of code with obscurely named variables, it doesn't matter to me, I immediately will think your code is bad.
+
+Don't be afraid to document your code. Obviously, there is no need to do things like this:
+
+```java
+// Increment counter by 1.
+counter++;
+
+// Prints out "Hello" to stdout.
+System.out.println("Hello");
+```
+
+Firstly, the code is so simple that a single glance tells you what it does. Secondly, the comments don't add any value, they only function as English translations of Java code. The same lines of code would be better if they looked like this:
+
+````java
+// We have a new customer. 
+counter++;
+
+// Greet them.
+System.out.println("Hello");
+````
+
+Probably, the variable `counter` should get a more descriptive name, like `nCustomers` or something, but that's besides the point. The point is that you should document why the code is how it is, not what it does.
+
+On top of documenting the code, there is need for documentation outside of the code as well. Please refer to the section [Add basic documentation][5] for templates for that.
+
 #### Closing an issue
 
 When you are done working with an issue, it's time to close it on GitHub. But before you do that, please follow this checklist:
 
 1. Make sure that every test passes, and that your code hasn't broken anything else in the code.
+1. Update `CHANGELOG.md` with the changes you've made to the project with this issue.
+1. If applicable, update `README.md` with more information about installation and usage. Remember to update the license information as well, if you have made use of a new library for this issue.
 1. Commit and push the feature branch one final time.
 1. Try to merge your feature branch with the `develop` branch.
 1. If there are no merge conflicts, proceed to the next step. Otherwise, read on:
-    1. Resolve all merge conflicts. If you're unsure of whose code is the correct one, yours or that of the contributor who last pushed to `develop`, contact them to discuss before going further.
+    1. Resolve all merge conflicts. If you're unsure of whose code is correct, yours or that of the contributor who last pushed to `develop`, contact them to discuss before going further.
     1. Make sure that every test passes, again, and that your merge hasn't broken anything else in the code.
     1. Commit and push the `develop` branch.
 1. Close the GitHub issue. You may write a comment about it if you want, but that's not mandatory. Usually I write "Done." or something similar to denote that I haven't just closed the issue for another reason, for example if the issue is no longer applicable.
 
 ### Create a release
 
-When all issues within a milestone is closed, it's time to create a new release.
+When all issues within a milestone is closed, it's time to create a new release. Follow these steps:
+
+1. From the `develop` branch, create a new release branch named after the milestone, for example `releases/1.0.2`.
+1. Make sure that every test passes.
+1. Make sure that `CHANGELOG` and `README` properly reflect the state of the project.
+1. Make sure that the code doesn't lack documentation.
 
 [1]: #installation
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
 [3]: https://git-scm.com/
 [4]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
+[5]: #add-basic-documentation
+[6]: #create-github-issues
