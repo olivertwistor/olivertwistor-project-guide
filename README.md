@@ -237,7 +237,7 @@ When you are done working with an issue, it's time to close it on GitHub. But be
 
 ### Create a release
 
-x
+When all issues within a milestone is closed, it's time to create a new release.
 
 
 
