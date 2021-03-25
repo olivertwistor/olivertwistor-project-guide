@@ -11,12 +11,16 @@
 ## Usage
 **In this section, you describe some usage examples.**
 
+**For applications and tools, describe at least the main functionality, along with the most significant configurations or preferences. If applicable, provide a link to an online manual or forum for the application/tool.**
+
+**For libraries, describe the most important parts of the public API. If available, provide a link to the API docs or equivalent.**
+
 ## Licensing
 **In this section, you list the license(s) of your project. Also list licenses of any third-party dependencies. Summarize them here and link to files or web pages containing full license terms, if available. You may put all third-party licenses in one file called "3rd-party-licenses" if you want.**
 
-*Project name* is licensed under a *License name*. You can read the full license terms in the file [LICENSE](LICENSE).
+*Project name is licensed under a License name*. You can read the full license terms in the file [LICENSE](LICENSE).
 
-* *Third-party library 1* by *author* is licensed under a *License name*.
-* *Third-party library 2* by *author* is licensed under a *License name*.
+* *Third-party library 1 by author is licensed under a License name*.
+* *Third-party library 2 by author is licensed under a License name*.
 
 You can read the full license terms for third-party dependencies in the file [3rd-party-licenses](3rd-party-licenses).
