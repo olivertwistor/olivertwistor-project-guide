@@ -15,9 +15,10 @@ This is my project model that I'm using with all my programming projects. It inc
     * [Work on issues](#work-on-issues)
         * [Branching](#branching)
         * [Testing](#testing)
-        * [Documentation](#documentation)
+        * [Documentation][7]
         * [Closing an issue](#closing-an-issue)
     * [Create a release](#create-a-release)
+        * [Build the project][8]
 
 ## Installation
 You can either read all the documents in this repository [online on Github](https://github.com/olivertwistor/olivertwistor-project-model) or [download them for offline use](https://github.com/olivertwistor/olivertwistor-project-model/releases).
@@ -225,37 +226,13 @@ Each project should detail the testing frameworks in use, in their respective `R
 
 #### Documentation
 
-Documentation is very important, both for your own sake and for your fellow contributors. When working with others or when I'm reviewing other people's code, I often find myself having to closely study the code due to lack of documentation. Ideally, you should be able to get a grasp of what a class or interface, a method or function, or a chunk of code does by only looking at the documentation instead of having to delve into the code. 
-
-I put a lot of effort on documenting and also formatting code in a nice, readable way. I value that more than cranking out code. Your code may be the most efficient, most robust, most secure code out there, but if your program is all a poorly formatted single line of code with obscurely named variables, it doesn't matter to me, I immediately will think your code is bad.
-
-Don't be afraid to document your code. Obviously, there is no need to do things like this:
-
-```java
-// Increment counter by 1.
-counter++;
-
-// Prints out "Hello" to stdout.
-System.out.println("Hello");
-```
-
-Firstly, the code is so simple that a single glance tells you what it does. Secondly, the comments don't add any value, they only function as English translations of Java code. The same lines of code would be better if they looked like this:
-
-````java
-// We have a new customer. 
-counter++;
-
-// Greet them.
-System.out.println("Hello");
-````
-
-Probably, the variable `counter` should get a more descriptive name, like `nCustomers` or something, but that's besides the point. The point is that you should document why the code is how it is, not what it does.
+Documentation is very important, both for your own sake and for your fellow contributors. When working with others or when I'm reviewing other people's code, I often find myself having to closely study the code due to lack of documentation. Ideally, you should be able to get a grasp of what a class or interface, a method or function, or a chunk of code does by only looking at the documentation instead of having to delve into the code.
 
 On top of documenting the code, there is need for documentation outside of the code as well. Please refer to the section [Add basic documentation][5] for templates for that.
 
 #### Closing an issue
 
-When you are done working with an issue, it's time to close it on GitHub. But before you do that, please follow this checklist:
+When you are done working with an issue, it's time to close it on GitHub. But before you do that, follow this checklist:
 
 1. Make sure that every test passes, and that your code hasn't broken anything else in the code.
 1. Update `CHANGELOG.md` with the changes you've made to the project with this issue.
@@ -274,8 +251,14 @@ When all issues within a milestone is closed, it's time to create a new release.
 
 1. From the `develop` branch, create a new release branch named after the milestone, for example `releases/1.0.2`.
 1. Make sure that every test passes.
-1. Make sure that `CHANGELOG` and `README` properly reflect the state of the project.
-1. Make sure that the code doesn't lack documentation.
+1. Make sure that `CHANGELOG.md` and `README.md` properly reflect the state of the project.
+1. Make sure that the code doesn't lack [documentation][7].
+1. [Make builds of the project][8] and commit any changes to the build instructions. Normally, no generated files should be committed to version control.
+1. x
+
+#### Build the project
+
+x
 
 [1]: #installation
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
@@ -283,3 +266,5 @@ When all issues within a milestone is closed, it's time to create a new release.
 [4]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
 [5]: #add-basic-documentation
 [6]: #create-github-issues
+[7]: #documentation
+[8]: #build-the-project
