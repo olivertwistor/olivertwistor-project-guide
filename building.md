@@ -51,23 +51,5 @@ This build is a little special, because it should only contain generated documen
 1. Generate the documentation with an appropriate tool, for example doxygen or Javadoc.
 1. If the generation tool doesn't pack the files into for example a JAR file, pack them yourself in a JAR file, a ZIP file or any other appropriate container. The end result should be one single file containing all documentation.
 
-## Create GitHub release
-Releases on GitHub provide a way to store binaries, documentation and source. Each milestone should have its own release. Here's how you create one:
-
-1. On the GitHub repository front page, press the *Code* tab. It may be selected by default.
-1. Press the button *x releases* (where x is the number of releases the repository has so far).
-1. Press either the button *Create a new release* (if there are no previous releases) or *Draft a new release* (if there is at least one previous release).
-1. For the *Tag version*, write the same name as the tag you created, for example `v1.7.4`.
-1. In the dropdown list *Target*, choose the `master` branch.
-1. Write the same in *Release title* as in *Tag version*.
-1. Write release notes in the text box *Describe this release*. This should be the most recent update to the `RELEASE.md` file, or at least a condensed version of that.
-1. *Attach* four files:
-    * runnable executable or library with compiled code
-    * source code without tests
-    * source code including tests
-    * generated documentation files
-1. Leave the checkbox regarding pre-release empty. I don't use pre-releases, but if this release really is one, go for it and check the box.
-1. Press the *Publish release* button. You can also save a draft by pressing the *Save draft* button.
-
 
 [1]: https://semver.org/

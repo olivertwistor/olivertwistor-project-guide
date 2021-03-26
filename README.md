@@ -253,8 +253,10 @@ When all issues within a milestone is closed, it's time to create a new release.
 1. Make sure that every test passes.
 1. Make sure that `CHANGELOG.md` and `README.md` properly reflect the state of the project.
 1. Make sure that the code doesn't lack [documentation][7].
-1. [Make builds of the project][8] and commit any changes to the build instructions. Normally, no generated files should be committed to version control.
-1. x
+1. Merge the release branch with the branches `master` and `develop`.
+1. [Make builds of the project][8].
+1. [Create a new GitHub release][9] and attach all builds made in the previous step.
+1. Delete all the feature branches created for this milestone, as well as the release branch.
 
 #### Build the project
 
@@ -268,3 +270,4 @@ x
 [6]: #create-github-issues
 [7]: #documentation
 [8]: #build-the-project
+[9]: https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release
