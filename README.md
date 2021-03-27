@@ -19,6 +19,7 @@ This is my project model that I'm using with all my programming projects. It inc
         * [Closing an issue](#closing-an-issue)
     * [Create a release](#create-a-release)
         * [Build the project][8]
+    * [End the project](#end-the-project)
 
 ## Installation
 You can either read all the documents in this repository [online on Github](https://github.com/olivertwistor/olivertwistor-project-model) or [download them for offline use](https://github.com/olivertwistor/olivertwistor-project-model/releases).
@@ -253,14 +254,48 @@ When all issues within a milestone is closed, it's time to create a new release.
 1. Make sure that every test passes.
 1. Make sure that `CHANGELOG.md` and `README.md` properly reflect the state of the project.
 1. Make sure that the code doesn't lack [documentation][7].
-1. Merge the release branch with the branches `master` and `develop`.
 1. [Make builds of the project][8].
 1. [Create a new GitHub release][9] and attach all builds made in the previous step.
+1. Merge the release branch with the branches `master` and `develop`.
 1. Delete all the feature branches created for this milestone, as well as the release branch.
 
 #### Build the project
 
-x
+Depending on the programming language and environment used, the build process might vary. You may be using Ant, Gradle, Maven or something else. The end result may be a JAR file, and EXE file, a WAR file or something else. Regardless, there are build versions that every release must have. Those are described in the following bullet list.
+
+* Runnable executable or library with compiled code; should contain:
+    * the executable file(s) needed to run the application; or compiled code packaged in a DLL, JAR etc.
+    * any external configuration files, databases or non-compiled assets needed to run the application (if applicable)
+    * readme file(s)
+    * license file(s)
+    * changelog
+    * user manual (if applicable)
+* Source code; should contain:
+    * all source code files (excluding test source code)
+    * configuration files and assets/resources
+    * readme file(s)
+    * license file(s)
+    * contributing guidelines
+    * changelog
+    * build files for all build versions
+* Generated documentation files; should contain:
+    * documentation generated from the language appropriate tool, for example *javadoc* for Java and *doxygen* for C
+
+All build scripts shall be committed into version control. For more details on how to make these builds, please refer to the manual of respective build tool.
+
+### Ending the project
+
+Normally, a programming project never ends. However, if you do want to end a project for whatever reason, you should tell people about that.
+
+Write something like this near the top in the `README.md` file:
+
+```
+This project was officially ended 2021-03-27. Therefore, do not expect further 
+development. Feel free to clone this repository to continue working on the 
+project yourself.
+```
+
+It would also be a good idea to [archive the Github repo][10]. That will create a clear signal that no more work is expected to be made to the project.
 
 [1]: #installation
 [2]: https://nvie.com/posts/a-successful-git-branching-model/
@@ -271,3 +306,4 @@ x
 [7]: #documentation
 [8]: #build-the-project
 [9]: https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release
+[10]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/archiving-repositories
