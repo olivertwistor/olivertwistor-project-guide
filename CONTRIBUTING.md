@@ -29,14 +29,7 @@ All software has bugs and I would very much appreciate help with identifying and
 1. Provide more details in the *comment* field if the title isn't enough.
 1. If you have repository access, read on. Otherwise, skip to the next step.
     1. Select an *assignee* that should handle the issue. If you're not selecting yourself, you should probably leave this blank.
-    1. Choose the appropriate *labels* (you may choose multiple labels if you want):
-     * for a bug, choose *bug*
-        * for a documentation related issue, choose *documentation*
-        * for a feature or general coding, choose *enhancement*
-        * for core functionality, choose *core*
-        * for quality of life things, choose *polish*
-        * for other things not listed here, add more labels as needed by 
-        clicking on the cogwheel
+    1. Choose the appropriate *labels* (you may choose multiple labels if you want).
     1. Leave *Project* blank.
     1. Also leave *Milestone* blank. This is best determined at a later date.
 1. Press the button *Submit new issue*.
