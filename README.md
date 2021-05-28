@@ -8,10 +8,10 @@ This is my project model that I'm using with all my programming projects. It inc
     * [Create a new repository](#create-a-new-repository)
     * [Add basic documentation][5]
     * [Create a work breakdown structure](#create-a-work-breakdown-structure)
+        * [GitHub issues][6]
     * [Create a network diagram](#create-a-network-diagram)
     * [Add milestones](#add-milestones)
         * [Milestones in GitHub](#milestones-in-github)
-    * [Create GitHub issues][6]
     * [Work on issues](#work-on-issues)
         * [Branching](#branching)
         * [Testing](#testing)
@@ -54,104 +54,117 @@ The repository should have the following repository documentation, placed in the
 
 ### Create a work breakdown structure
 
-In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed. This can be difficult to do, especially in software development where there are so many unknowns in the beginning. Don't worry that you might not capture all tasks in one go. Just try to capture as many tasks as possible; you can always return to this step later.
+In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed. This can be difficult to do, especially in software development where there are so many unknowns in the beginning. Don't worry if you won't capture all tasks in one go. Just try to capture as many tasks as possible; you can always return to this step later.
 
-It's a good idea to store the WBS as a mind map or a nested list. That way you can have multiple levels of granularity over your tasks, in order to have better overview of all tasks. Neither the order of the tasks nor their priority are important (you will deal with that at later steps). Try to make each task a manageable size, like four to eight hours. If it would be larger, it's probably more suitable to be a work package (closer to the middle in the mind map).
+[GitHub issues][6] is the place to store the WBS. One issue per task. For now, the order of the tasks aren't important, we'll cover that in the next section when we'll make a network diagram. Just focus on capturing as many tasks as possible. In order to group things together, for example all UI tasks or tasks belonging to a module or part of your project, feel free to create GitHub labels for each group and attach the appropriate ones to your created issues. For each issue, try to decide the importance or priority according to the following table:
 
-![An example of a WBS as a mind map](examples/wbs-example.png)
+| Importance  | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| must-have   | Tasks that are absolutely necessary for the project to work as intended. Think of this importance as that you would have a minimum viable product when all must-have tasks are complete. |
+| should-have | Tasks that aren't necessary to create a minimum viable product, but still would greatly enhanced the user experience. |
+| could-have  | Tasks of lower importance. Think quality of life, or that extra touch that is nice to have, but nothing that should impede the release of the project if it's not included. |
 
-This image shows a (partial) WBS of a calculator app. Note that only the outermost nodes in the map are considered to be tasks. All other are work packages &mdash; groups of tasks that are connected in some way. 
+Add these importance levels as GitHub labels as well. If you're unsure which level to choose for a specific task, leave it for now. You can always come back to it later.
 
-The tasks in this example are:
+The following table shows an example of a (partial) WBS for a calculator app:
 
-* Design the buttons
-* Lay out all the UI components
-* Write help text
-* Make all strings translatable
-* Make all numbers locale-aware
-* Make the app fully keyboard accessible
-* Define basic arithmetic
-* Define statistical functions
-* Enable exporting calculations to text file.
+| Issue ID | Description                                | Modules | Importance  |
+| :------: | :----------------------------------------- | :------ | :---------- |
+|    1     | Design the buttons                         | ui      | must-have   |
+|    2     | Lay out all the UI components              | ui      | must-have   |
+|    3     | Write help text                            | ui      | should-have |
+|    4     | Make all strings translatable              | ui      | could-have  |
+|    5     | Make all numbers locale-aware              | ui      | could-have  |
+|    6     | Make the app fully keyboard accessible     | ui      | should-have |
+|    7     | Define basic arithmetic                    | math    | must-have   |
+|    8     | Define statistical functions               | math    | should-have |
+|    9     | Enable exporting calculations to text file | io      | could-have  |
 
-The same WBS presented in a nested list would look like this:
+Some of these tasks probably could be broken down further, depending on how granular you want your workflow to be. Personally, I feel that too small tasks costs more than they're worth. While working, if you discover that a particular task should have been broken down into subtasks, do the following:
 
-1. Create the UI
-    1. Design the buttons.
-    1. Lay out all the UI components.
-    1. Write help text.
-    1. Do localization.
-        1. Make all strings translatable.
-        1. Make all numbers locale-aware.
-    1. Make the app fully keyboard accessible.
-1. Define the mathematical operations.
-    1. Define basic arithmetic.
-    1. Define statistical functions.
-1. Enable exporting calculations to text file.
+1. Add the subtasks as GitHub issues.
+1. If appropriate, label the subtasks with the "parent", like so: `math/basic-arithmetic`, if breaking down issue #7 in the preceding table.
+1. Close the "parent" GitHub issue.
 
-In my example, the task *Enable exporting calculations to text file* could probably be broken down further and thus would be more suited as a work package. While working with your project, you will undoubtedly discover things like this. When it happens, you can go back back to this step and add to the WBS.
+Also, note that deciding which importance a particular task should get is subjective and depends on what you find more important than other things. For example, in my calculator app example, I've decided that's keyboard accessibility is more important than internationalisation and localisation. My motivation for that is that a user who can't use a mouse would be completely shut out from using the app if the app isn't keyboard accessible, while a user whose native language differs from the app's original language could possibly use a dictionary if need be. The point is that while lack of internationalisation and localisation can make the experience worse for a user, it doesn't *preclude* the user from using the app.
 
-Check in the work breakdown structure file(s) into version control under the folder `project-files`. The file name(s) should begin with `wbs-`.
+#### GitHub issues
+
+To create GitHub issues based on the task from the WBS, please do the following:
+
+1. On the repository front page, press the *Issues* tab.
+1. Press the *New issue* button.
+1. Write a short but descriptive *Title*. Example: `Make all strings translatable`.
+1. If you want to write more than just that short description, feel free to write it in the *Leave a comment* text box. Here you can write implementation details if you want, or perhaps argue for why this issue was created.
+1. Assign a user by pressing the cogwheel besides *Assignee*. This can be altered later, so if you're not sure to whom to assign this issue, it's better to leave it empty for now.
+1. Press the cogwheel besides *Labels* and choose all labels that apply. For our calculator app example, appropriate labels would be `ui` and `should-have`. Since it is an enhancement, it should probably also be labelled with `enhancement`.
+1. Leave *Project* empty. In this model, I'm not using GitHub projects, but if you do, feel free to select an appropriate value here.
+1. Leave *Milestone* empty for now. You'll set this once you have created a network diagram in the next section.
+1. Press the *Submit new issue* button.
 
 ### Create a network diagram
 
-With the work breakdown structure in place, it's now time to create a network diagram. This is the step where you define an order to all tasks, as well their dependency relationships. Some tasks may be quite independent and could be worked on whenever and in parallel with other tasks, but most tasks are dependent on the completion of other tasks or have themselves dependent tasks.
+With the work breakdown structure in place, and GitHub issues created, it's now time to create a network diagram. In this step we'll define an order to all tasks, as well their dependency relationships. Some tasks may be quite independent and could be worked on whenever and in parallel with other tasks, but most tasks are either dependent on the completion of other tasks or have dependent tasks themselves.
 
-A network diagram can either be created as a mind map or a table. I'll show an example of a mind map first. I'll use the same calculator app example as in the previous section.
+A network diagram can either be created as a mind map or a table. I'll show an example of the latter next. I'm using the same calculator app example as in the previous section. Note that this is the same table as in the WBS section, with the *Modules* heading removed (for the sake of readability) and dependencies added.
 
-![An example of a network diagram as a mind map](examples/network-example.png)
+| Issue ID | Description                                | Importance  | Depends upon |
+| :------: | :----------------------------------------- | :---------- | :----------: |
+|    1     | Design the buttons.                        | must-have   |              |
+|    2     | Lay out all the UI components.             | must-have   |              |
+|    3     | Write help text.                           | should-have |              |
+|    4     | Make all strings translatable.             | could-have  |      3       |
+|    5     | Make all numbers locale-aware.             | could-have  |     1, 2     |
+|    6     | Make the app fully keyboard accessible.    | should-have |      2       |
+|    7     | Define basic arithmetic.                   | must-have   |              |
+|    8     | Define statistical functions.              | should-have |      7       |
+|    9     | Enable exporting calculation to text file. | could-have  |      7       |
 
-The same network diagram presented in a table would look like this:
+As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with task #2, you may proceed with task #6, but not task #5 before you're also finished with task #1. Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will discuss those in the next section.
 
-| ID    | Name                                       | Depends upon              |
-| ----- | ------------------------------------------ | ------------------------- |
-|       | *Project start*                            |                           |
-| 1.1   | Design the buttons.                        |                           |
-| 1.2   | Lay out all the UI components.             |                           |
-| 1.3   | Write help text.                           |                           |
-| 1.4.1 | Make all strings translatable.             | 1.3                       |
-| 1.4.2 | Make all numbers locale-aware.             | 1.1, 1.2                  |
-| 1.5   | Make the app fully keyboard accessible.    | 1.2                       |
-| 2.1   | Define basic arithmetic.                   |                           |
-| 2.2   | Define statistical functions.              | 2.1                       |
-| 3     | Enable exporting calculation to text file. | 2.1                       |
-|       | *Project end*                              | 1.4.1, 1.4.2, 1.5, 2.2, 3 |
+Now, we need to reorder the tasks in such a way that the most important tasks get done first, without breaking any dependencies. You can see the results of that in the following table:
 
-Note that the ID's correspond to the tasks in the nested list from the previous section. Also, note that I added a *Project start* and a *Project end*. Obviously, a work breakdown structure and network diagram is much more detailed than this in a real-life project.
+| Issue ID | Description                                | Importance  | Depends upon |
+| :------: | :----------------------------------------- | :---------- | :----------: |
+|    1     | Design the buttons                         | must-have   |              |
+|    2     | Lay out all the UI components              | must-have   |              |
+|    7     | Define basic arithematic                   | must-have   |              |
+|    3     | Write help text                            | should-have |              |
+|    6     | Make the app fully keyboard accessible     | should-have |      2       |
+|    8     | Define statistical functions               | should-have |      7       |
+|    4     | Make all strings translatable              | could-have  |      3       |
+|    5     | Make all numbers locale-aware              | could-have  |     1, 2     |
+|    9     | Enable exporting calculations to text file | could-have  |      7       |
 
-As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with task 1.2, you may proceed with task 1.5, but not task 1.4.2 before you're also finished with task 1.1. Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will discuss those in the next section.
+ 
 
 Check in the network diagram file(s) into version control under the folder `project-files`. The file name(s) should begin with `network-`.
 
 ### Add milestones
 
-Milestones are points during the development when you have something that is deliverable, for example when a feature is implemented. Think of milestones as the big steps you need to take in order to finish the project, and tasks as the small steps leading up to each milestone. You should start with the network diagram and insert milestones at appropriate places. For example:
+Milestones are points during the development when you have something that is deliverable, for example when a feature is implemented. Think of milestones as the big steps you need to take in order to finish the project, and tasks as the small steps leading up to each milestone. 
 
-![An example of a network diagram with milestones added.](examples/network-with-milestones-example.png)
+Let's add milestones in appropriate places in the network diagram we created in the previous section. For the sake of readability, in the following table, only *Issue ID* and *Description* are left from the network diagram. The order is preserved, though.
 
-Note that to increase readability in the image, *Milestone 3* leads to a task to its southwest. Milestones are coloured yellow and tasks coloured light blue. The same diagram can be presented as a table, as follows:
+| Issue ID | Description                                |
+| :------: | :----------------------------------------- |
+|    1     | Design the buttons                         |
+|    2     | Lay out all the UI components              |
+|    7     | Define basic arithematic                   |
+|          | *Milestone 1.0.0*                          |
+|    3     | Write help text                            |
+|          | *Milestone 1.1.0*                          |
+|    6     | Make the app fully keyboard accessible     |
+|          | *Milestone 1.2.0*                          |
+|    8     | Define statistical functions               |
+|          | *Milestone 2.0.0*                          |
+|    4     | Make all strings translatable              |
+|    5     | Make all numbers locale-aware              |
+|          | *Milestone 2.1.0*                          |
+|    9     | Enable exporting calculations to text file |
+|          | *Milestone 2.2.0*                          |
 
-| ID     | Name                                        | Depends upon        |
-| ------ | ------------------------------------------- | ------------------- |
-|        | *Project start*                             |                     |
-| 1.1    | Design the buttons.                         |                     |
-| 1.2    | Lay out all the UI components.              |                     |
-| 2.1    | Design basic arithmetic.                    |                     |
-| *MS 1* | *Milestone 1*                               | *1.1, 1.2, 2.1*     |
-| 1.3    | Write help text.                            |                     |
-| *MS 2* | *Milestone 2*                               | *1.3*               |
-| 1.4.1  | Make all strings translatable.              | 1.3                 |
-| 1.4.2  | Make all numbers locale-aware.              | 1.1, 1.2            |
-| 1.5    | Make the app fully keyboard accessible.     | 1.2                 |
-| *MS 3* | *Milestone 3*                               | *1.4.1, 1.4.2, 1.5* |
-| 2.2    | Define statistical functions                | 2.1                 |
-| *MS 4* | Milestone 4                                 | 2.2                 |
-| 3      | Enable exporting calculations to text file. | 2.1                 |
-|        | *Project end*                               |                     |
-
-In this example with the calculator app, we have defined four milestones (if we don't include the project end). This means that we can deliver five consecutive versions of the app. The first version with the ability to do basic arithemetic, and with the buttons and UI elements laid out. The second version have a help text. The third version includes accessibility enhancements. The fourth version adds statistical functions to the calculator. The fifth and final version enables the user to export their calculations to a text file. By doing things this way, the users can quickly begin using your app, already after three of the nine tasks in total.
-
-In which order you decide to do tasks and milestones depends on how you prioritize functionality. That the first milestone in my example should come first is probably not controversial &mdash; it's pointless to do anything else before laying the foundation for the app to even be operable. However, milestones 2 through 4 can be debated. Is accessibility more important than a help text? Is providing statistical functions and export capabilities more important than accessibility? It depends on your user base. If your user base comprises of statisticians who speak the same language as you, and are capable of using a mouse, then it would make much more sense to move *Milestone 3* to before *Milestone 2* (and leave everything else unchanged). Please note that we couldn't have switched places of *Milestone 1* and *Milestone 2*, because task 1.4.1 in *Milestone 2* depends on task 1.3 in *Milestone 1*.
+In this example with the calculator app, we have defined six milestones. This means that we can deliver six consecutive versions of the app. The first version with the ability to do basic arithemetic, and with the buttons and UI elements laid out. The second version have a help text. The third version includes accessibility enhancements. The fourth version adds statistical functions to the calculator. The fifth internationalise and localise the app. The sixth (and so far, the final) version enables the user to export their calculations to a text file. By doing things this way, the users can quickly begin using your app, already after three of the nine tasks in total.
 
 #### Milestones in GitHub
 
@@ -172,33 +185,6 @@ Semantic Versioning dictates that version numbers follow a specific pattern: `MA
     * Minor releases mean non-breaking changes, for example added classes and methods. For a user of your library, to upgrade to a new minor release should never require changes to client code.
     
     * Fixes mean bug fixes, other changes to your private API or internal changes to methods that don't affect the public API. Note that security bug fixes should result in a new major release (if really serious) or at least a minor release. This will tell the user that it's probably best to upgrade.
-    
-
-For example, you could give the milestones of the calculator app the following version numbers.
-
-| Milestone   | Version number | Reasoning                                                    |
-| ----------- | -------------- | ------------------------------------------------------------ |
-| MS 1        | 1.0.0          | It's the first release of a functioning application.         |
-| MS 2        | 1.0.1          | It could be argued that added help text constitutes a `MINOR` release, and that the version number should have been 1.1.0, but I don't think of help text, tooltips etc. as added *functionality*. Perhaps I would reconsider if the help text were considerable, perhaps with full-fledged downloadable examples, but with this kind of application, the help text would be rather limited. |
-| MS 3        | 1.0.2          | Again, it could be argued that added accessibility and localization constitutes a `MINOR` release. It really comes down to a judgement call. |
-| MS 4        | 2.0.0          | I think that adding statistical functions is more than a `MINOR` release because of added functionality. When going from a standard calculator to providing statistical functions, it becomes almost an entirely new application. The main reason for this being a `MAJOR` release instead of a `MINOR` one is that I would think that the user base changes (or at least expands). |
-| Project end | 2.1.0          | A new functionality has been added: exports.                 |
-
-As you can see, deciding on version numbers can be tricky, and it's more of an art than a science. The most important thing is consistency, though. Version numbering is more important for libraries than for application, because library users need to know which upgrades can be done more or less automatically, and which upgrades need changes in their own applications or libraries.
-
-### Create GitHub issues
-
-Now it's time to create issues based on the network diagram. For each task in the diagram, do the following.
-
-1. On the repository front page, press the *Issues* tab.
-1. Press the *New issue* button.
-1. Write a short but descriptive *Title*. Example: `Make all strings translatable`.
-1. If you want to write more than just that short description, feel free to write it in the *Leave a comment* text box. Here you can write implementation details if you want, or perhaps argue for why this issue was created.
-1. Assign a user by pressing the cogwheel besides *Assignee*. This can be altered later, so if you're not sure about to whom to assign this issue, it's better to leave it empty for now.
-1. Press the cogwheel besides *Labels* and choose all labels that apply.
-1. Leave *Project* empty. In this model, I'm not using GitHub projects, but if you do, feel free to select an appropriate value here.
-1. Select the appropriate *Milestone* from the network diagram.
-1. Press the *Submit new issue* button.
 
 ### Work on issues
 
@@ -210,10 +196,10 @@ All my projects follow the same branching model, [Vincent Driessen's branching m
 
 The basics of the branching model is that released code is on the `master` branch, tested but not released code on `develop` and each issue on its own `feature/` or `hotfix/` branch. Releases are on a `release/` branch until they are fully released.
 
-Let's say you have decided to work on the issue *Make all strings translatable* (task 1.4.1 in the network diagram). You have assigned yourself to the issue and are about to start working. The first thing you should do is to create a new feature branch. That should include the GitHub issue number, a shortened version of the issue name, and if you're not the only developer, your initials or something else identifying that it is *your* branch. Examples (assume that task 1.4.1 has GitHub issue number 5, and I my initials are "jn"):
+Let's say you have decided to work on the issue *Make all strings translatable* (issue #4 in the network diagram). You have assigned yourself to the issue and are about to start working. The first thing you should do is to create a new feature branch. That should include the GitHub issue number, a shortened version of the issue name, and if you're not the only developer, your initials or something else identifying that it is *your* branch. Examples (assume that my initials are "jn"):
 
-* `5-translatable-strings`; or
-* `5-translatable-strings-jn`
+* `4-translatable-strings`; or
+* `4-translatable-strings-jn`
 
 It's strictly not necessary to include the shortened version of the issue name for uniqueness' sake, but I find it easier to remember what the branch is about than just having the issue number (and the initials).
 
@@ -250,7 +236,7 @@ When you are done working with an issue, it's time to close it on GitHub. But be
 
 When all issues within a milestone is closed, it's time to create a new release. Follow these steps:
 
-1. From the `develop` branch, create a new release branch named after the milestone, for example `releases/1.0.2`.
+1. From the `develop` branch, create a new release branch named after the milestone, for example `releases/1.1.0`.
 1. Make sure that every test passes.
 1. Make sure that `CHANGELOG.md` and `README.md` properly reflect the state of the project.
 1. Make sure that the code doesn't lack [documentation][7].
@@ -271,17 +257,17 @@ Depending on the programming language and environment used, the build process mi
     * changelog
     * user manual (if applicable)
 * Source code; should contain:
-    * all source code files (excluding test source code)
+    * all source code files
     * configuration files and assets/resources
     * readme file(s)
     * license file(s)
     * contributing guidelines
     * changelog
     * build files for all build versions
-* Generated documentation files; should contain:
+* Documentation files; should contain:
     * documentation generated from the language appropriate tool, for example *javadoc* for Java and *doxygen* for C
 
-All build scripts shall be committed into version control. For more details on how to make these builds, please refer to the manual of respective build tool.
+All build scripts shall be committed into version control. For more details on how to make these builds, please refer to the manual of respective build tool. It's good to follow the naming conventions of these tools, as well.
 
 ### Ending the project
 
@@ -302,7 +288,7 @@ It would also be a good idea to [archive the Github repo][10]. That will create 
 [3]: https://git-scm.com/
 [4]: https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters
 [5]: #add-basic-documentation
-[6]: #create-github-issues
+[6]: #github-issues
 [7]: #documentation
 [8]: #build-the-project
 [9]: https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release
