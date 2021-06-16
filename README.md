@@ -141,7 +141,7 @@ Check in the network diagram file(s) into version control under the folder `proj
 
 ### Work on issues
 
-Whenever you are ready to work on an issue, take a look at the closest milestone that's still open. In there, pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues (see the network diagram). If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section, [Create GitHub issues][6].
+Whenever you are ready to work on an issue, take a look at the network diagram and pick an issue that either is assigned to you or is yet unassigned. Please take care to not choose an issue which is dependent upon one or more open issues. If that's the case, you should work on those issues first. Also, if your chosen issue is unassigned, go assigned it to yourself (as described in the previous section, [Create GitHub issues][6].
 
 #### Branching
 
@@ -160,7 +160,7 @@ While working on your issue, commit often so each commit won't have too many cod
 
 #### Testing
 
-Testing is a good thing. It should be done wherever and whenever feasible. I'm not very strict about it, though. Sergey Kolodiy have written an excellent [article about unit testing][4].
+Testing is a good thing, but can be difficult. It should be done wherever and whenever feasible. I'm not very strict about it, though. Sergey Kolodiy have written an excellent [article about unit testing][4].
 
 Each project should detail the testing frameworks in use, in their respective `README.md` file. Test code should be committed to the Git repository so other contributors can benefit from it.
 
@@ -189,7 +189,7 @@ When you are done working with an issue, it's time to close it on GitHub. But be
 
 When [it's time to make a release][12], please follow these steps:
 
-1. From the `develop` branch, create a new release branch with a [name that reflects the amount of completed work][11], based on Semantic Versioning. For example `releases/1.1.0`.
+1. From the `develop` branch, create a new release branch with a [name that reflects the amount of completed work][11], based on Semantic Versioning. For example `release/1.1.0`.
 1. Make sure that every test passes.
 1. Make sure that `CHANGELOG.md` and `README.md` properly reflect the state of the project.
 1. Make sure that the code doesn't lack [documentation][7].
@@ -273,3 +273,4 @@ It would also be a good idea to [archive the Github repo][10]. That will create 
 [9]: https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release
 [10]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/archiving-repositories
 [11]: #naming-releases
+[12]: #release-schedule
