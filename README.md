@@ -200,7 +200,11 @@ When [it's time to make a release][12], please follow these steps:
 
 #### Release schedule
 
+Releases should be made in set intervals of time, such as monthly, bi-monthly or quarterly. At the beginning of each interval, you will start working on issues in the order set by your network diagram. At the end of each interval, you will take stock of all the work you have done, and create a release with the proper version number. How to go decide on the proper version number, please read the next section.
 
+By doing releases this way, one release may involve huge improvements, while another may involve only tiny ones. It all depends on how much you'll get done in one interval of time. This makes the releases consistent regarding time, but inconsistent when it comes to feature scope.
+
+However, serious bugs and more importantly, security patches should be released immediately when fixed.
 
 #### Naming releases
 
