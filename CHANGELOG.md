@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog][1] and this project adheres to [Semantic Versioning 2.0.0][2].
 
+## Unreleased
+
+* Changed
+    * Releases aren't planned beforehand regarding scope. Instead, releases have a fixed time interval, with varying scope.
+* Removed
+    * Milestones are no longer used.
+
 ## 2.1.0
 
 * Changed

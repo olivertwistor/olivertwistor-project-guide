@@ -10,14 +10,14 @@ This is my project model that I'm using with all my programming projects. It inc
     * [Create a work breakdown structure](#create-a-work-breakdown-structure)
         * [GitHub issues][6]
     * [Create a network diagram](#create-a-network-diagram)
-    * [Add milestones](#add-milestones)
-        * [Milestones in GitHub](#milestones-in-github)
     * [Work on issues](#work-on-issues)
         * [Branching](#branching)
         * [Testing](#testing)
         * [Documentation][7]
         * [Closing an issue](#closing-an-issue)
     * [Create a release](#create-a-release)
+        * [Release schedule][12]
+        * [Naming releases][11]
         * [Build the project][8]
     * [End the project](#end-the-project)
 
@@ -80,13 +80,13 @@ The following table shows an example of a (partial) WBS for a calculator app:
 |    8     | Define statistical functions               | math    | should-have |
 |    9     | Enable exporting calculations to text file | io      | could-have  |
 
-Some of these tasks probably could be broken down further, depending on how granular you want your workflow to be. Personally, I feel that too small tasks costs more than they're worth. While working, if you discover that a particular task should have been broken down into subtasks, do the following:
+Some of these tasks probably could be broken down further, depending on how granular you want your workflow to be. While working, if you discover that a particular task should have been broken down into subtasks, do the following:
 
 1. Add the subtasks as GitHub issues.
 1. If appropriate, label the subtasks with the "parent", like so: `math/basic-arithmetic`, if breaking down issue #7 in the preceding table.
 1. Close the "parent" GitHub issue.
 
-Also, note that deciding which importance a particular task should get is subjective and depends on what you find more important than other things. For example, in my calculator app example, I've decided that's keyboard accessibility is more important than internationalisation and localisation. My motivation for that is that a user who can't use a mouse would be completely shut out from using the app if the app isn't keyboard accessible, while a user whose native language differs from the app's original language could possibly use a dictionary if need be. The point is that while lack of internationalisation and localisation can make the experience worse for a user, it doesn't *preclude* the user from using the app.
+Also, note that deciding which importance a particular task should get is subjective and depends on what you find more important than other things. In my calculator app example, I've decided that's keyboard accessibility is more important than internationalisation and localisation. My motivation for that is that a user who can't use a mouse would be completely shut out from using the app if the app isn't keyboard accessible, while a user whose native language differs from the app's original language could possibly use a dictionary if need be. The point is that while lack of internationalisation and localisation can make the experience worse for a user, it doesn't *preclude* the user from using the app.
 
 #### GitHub issues
 
@@ -97,9 +97,8 @@ To create GitHub issues based on the task from the WBS, please do the following:
 1. Write a short but descriptive *Title*. Example: `Make all strings translatable`.
 1. If you want to write more than just that short description, feel free to write it in the *Leave a comment* text box. Here you can write implementation details if you want, or perhaps argue for why this issue was created.
 1. Assign a user by pressing the cogwheel besides *Assignee*. This can be altered later, so if you're not sure to whom to assign this issue, it's better to leave it empty for now.
-1. Press the cogwheel besides *Labels* and choose all labels that apply. For our calculator app example, appropriate labels would be `ui` and `should-have`. Since it is an enhancement, it should probably also be labelled with `enhancement`.
-1. Leave *Project* empty. In this model, I'm not using GitHub projects, but if you do, feel free to select an appropriate value here.
-1. Leave *Milestone* empty for now. You'll set this once you have created a network diagram in the next section.
+1. Press the cogwheel besides *Labels* and choose all labels that apply. For our calculator app example, appropriate labels would be `ui` and `should-have`. Since it is an enhancement, it should probably also be labelled with `enhancement`. However, neither `ui` nor `enhancement` is mandatory. The important thing here is the importance label (`should-have`).
+1. Leave both *Project* and *Milestone* empty. In this model, I'm not using GitHub projects or milestones, but if you do, feel free to select appropriate values here.
 1. Press the *Submit new issue* button.
 
 ### Create a network diagram
@@ -120,7 +119,7 @@ A network diagram can either be created as a mind map or a table. I'll show an e
 |    8     | Define statistical functions.              | should-have |      7       |
 |    9     | Enable exporting calculation to text file. | could-have  |      7       |
 
-As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with task #2, you may proceed with task #6, but not task #5 before you're also finished with task #1. Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will discuss those in the next section.
+As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with issue #2, you may proceed with issue #6, but not issue #5 before you're also finished with issue #1. Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will however not use milestones in this model.
 
 Now, we need to reorder the tasks in such a way that the most important tasks get done first, without breaking any dependencies. You can see the results of that in the following table:
 
@@ -139,52 +138,6 @@ Now, we need to reorder the tasks in such a way that the most important tasks ge
  
 
 Check in the network diagram file(s) into version control under the folder `project-files`. The file name(s) should begin with `network-`.
-
-### Add milestones
-
-Milestones are points during the development when you have something that is deliverable, for example when a feature is implemented. Think of milestones as the big steps you need to take in order to finish the project, and tasks as the small steps leading up to each milestone. 
-
-Let's add milestones in appropriate places in the network diagram we created in the previous section. For the sake of readability, in the following table, only *Issue ID* and *Description* are left from the network diagram. The order is preserved, though.
-
-| Issue ID | Description                                |
-| :------: | :----------------------------------------- |
-|    1     | Design the buttons                         |
-|    2     | Lay out all the UI components              |
-|    7     | Define basic arithematic                   |
-|          | *Milestone 1.0.0*                          |
-|    3     | Write help text                            |
-|          | *Milestone 1.1.0*                          |
-|    6     | Make the app fully keyboard accessible     |
-|          | *Milestone 1.2.0*                          |
-|    8     | Define statistical functions               |
-|          | *Milestone 2.0.0*                          |
-|    4     | Make all strings translatable              |
-|    5     | Make all numbers locale-aware              |
-|          | *Milestone 2.1.0*                          |
-|    9     | Enable exporting calculations to text file |
-|          | *Milestone 2.2.0*                          |
-
-In this example with the calculator app, we have defined six milestones. This means that we can deliver six consecutive versions of the app. The first version with the ability to do basic arithemetic, and with the buttons and UI elements laid out. The second version have a help text. The third version includes accessibility enhancements. The fourth version adds statistical functions to the calculator. The fifth internationalise and localise the app. The sixth (and so far, the final) version enables the user to export their calculations to a text file. By doing things this way, the users can quickly begin using your app, already after three of the nine tasks in total.
-
-#### Milestones in GitHub
-
-Milestones can be found at the GitHub repo URL appended with `/milestones`, for example [Olivertwistor Project Model's milestones](https://github.com/olivertwistor/olivertwistor-project-model/milestones). They can also be created directly from the issue detail's page. 
-
-Each milestone represents a release, and should contain all issues that need to be resolved for that release. Since milestones represent releases, they should share names and follow [Semantic Versioning 2.0.0](https://semver.org/). The naming pattern is described next.
-
-Semantic Versioning dictates that version numbers follow a specific pattern: `MAJOR.MINOR.FIX`. A *3.1.4* version number means that it's the third major release of this project, the second minor release within that major release (the first `MINOR` is always a zero), and the fifth fix within that minor release (the first `FIX` is always a zero). You may use the following list to determine whether a particular milestone constitutes a `MAJOR`, `MINOR` or `FIX` version.
-
-* Applications
-    * Major releases mean big changes or additions in functionality, resulting in brand new ways of using the application.
-    * Minor releases mean smaller changes or additions in functionality, for example that the user can save a file in PDF format in addition to TXT, as was the case previously.
-    * Fixes mean bug fixes or other very small things that don't involve a change in functionality. This can be things both visible and invisible to the user, for example a fixed typo or a colour change to improve readability. Note that security bug fixes should result in a new major release (if really serious) or at least a minor release. This will tell the user that it's probably best to upgrade.
-* Libraries
-
-    * Major releases mean breaking changes in your public API, for example a removed method or a changed return type of a method. For a user of your library, to upgrade to a new major release typically has to involve changes to client code.
-    
-    * Minor releases mean non-breaking changes, for example added classes and methods. For a user of your library, to upgrade to a new minor release should never require changes to client code.
-    
-    * Fixes mean bug fixes, other changes to your private API or internal changes to methods that don't affect the public API. Note that security bug fixes should result in a new major release (if really serious) or at least a minor release. This will tell the user that it's probably best to upgrade.
 
 ### Work on issues
 
@@ -234,16 +187,38 @@ When you are done working with an issue, it's time to close it on GitHub. But be
 
 ### Create a release
 
-When all issues within a milestone is closed, it's time to create a new release. Follow these steps:
+When [it's time to make a release][12], please follow these steps:
 
-1. From the `develop` branch, create a new release branch named after the milestone, for example `releases/1.1.0`.
+1. From the `develop` branch, create a new release branch with a [name that reflects the amount of completed work][11], based on Semantic Versioning. For example `releases/1.1.0`.
 1. Make sure that every test passes.
 1. Make sure that `CHANGELOG.md` and `README.md` properly reflect the state of the project.
 1. Make sure that the code doesn't lack [documentation][7].
 1. [Make builds of the project][8].
 1. [Create a new GitHub release][9] and attach all builds made in the previous step.
 1. Merge the release branch with the branches `master` and `develop`.
-1. Delete all the feature branches created for this milestone, as well as the release branch.
+1. Delete all the feature branches created for this release, as well as the release branch.
+
+#### Release schedule
+
+
+
+#### Naming releases
+
+Releases can be found at the GitHub repo URL appended with `/releases`, for example [Olivertwistor Project Model's releases](https://github.com/olivertwistor/olivertwistor-project-model/releases). They should share names and follow [Semantic Versioning 2.0.0](https://semver.org/). The naming pattern is described next.
+
+Semantic Versioning dictates that version numbers follow a specific pattern: `MAJOR.MINOR.FIX`. A *3.1.4* version number means that it's the third major release of this project, the second minor release within that major release (the first `MINOR` is always a zero), and the fifth fix within that minor release (the first `FIX` is always a zero). You may use the following list to determine whether a particular milestone constitutes a `MAJOR`, `MINOR` or `FIX` version.
+
+* Applications
+    * Major releases mean big changes or additions in functionality, resulting in brand new ways of using the application.
+    * Minor releases mean smaller changes or additions in functionality, for example that the user can save a file in PDF format in addition to TXT, as was the case previously.
+    * Fixes mean bug fixes or other very small things that don't involve a change in functionality. This can be things both visible and invisible to the user, for example a fixed typo or a colour change to improve readability. Note that security bug fixes should result in a new major release (if really serious) or at least a minor release. This will tell the user that it's probably best to upgrade.
+* Libraries
+
+    * Major releases mean breaking changes in your public API, for example a removed method or a changed return type of a method. For a user of your library, to upgrade to a new major release typically has to involve changes to client code.
+
+    * Minor releases mean non-breaking changes, for example added classes and methods. For a user of your library, to upgrade to a new minor release should never require changes to client code.
+
+    * Fixes mean bug fixes, other changes to your private API or internal changes to methods that don't affect the public API. Note that security bug fixes should result in a new major release (if really serious) or at least a minor release. This will tell the user that it's probably best to upgrade.
 
 #### Build the project
 
@@ -293,3 +268,4 @@ It would also be a good idea to [archive the Github repo][10]. That will create 
 [8]: #build-the-project
 [9]: https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository#creating-a-release
 [10]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/archiving-repositories
+[11]: #naming-releases
