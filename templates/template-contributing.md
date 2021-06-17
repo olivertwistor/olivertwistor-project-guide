@@ -29,7 +29,7 @@ All software has bugs and I would very much appreciate help with identifying and
     1. Select an *assignee* that should handle the issue. If you're not selecting yourself, you should probably leave this blank.
     1. Choose the appropriate *labels* (you may choose multiple labels if you want)
     1. Leave *Project* blank.
-    1. Leave *Milestone* blank if you're not absolutely certain right now to which future release this issue belongs.
+    1. Leave *Milestone* blank.
 1. Press the button *Submit new issue*.
 
 ## How to make changes to the project
