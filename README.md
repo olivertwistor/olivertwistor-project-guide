@@ -1,123 +1,77 @@
 # Olivertwistor Project Model
 This is my project model that I'm using with all my programming projects. It includes both instructions and templates.
 
-* [Installation][1]
-* [Usage](#usage)
-* [Licenses](#licenses)
-* [Project instructions](#project-instructions)
-    * [Create a new repository](#create-a-new-repository)
-    * [Add basic documentation][5]
-    * [Create a work breakdown structure](#create-a-work-breakdown-structure)
-        * [GitHub issues][6]
-    * [Create a network diagram](#create-a-network-diagram)
-    * [Work on issues](#work-on-issues)
-        * [Branching](#branching)
-        * [Testing](#testing)
-        * [Documentation][7]
-        * [Closing an issue](#closing-an-issue)
-    * [Create a release](#create-a-release)
-        * [Release schedule][12]
-        * [Naming releases][11]
-        * [Build the project][8]
-    * [End the project](#end-the-project)
-
 ## Installation
 You can either read all the documents in this repository [online on Github](https://github.com/olivertwistor/olivertwistor-project-model) or [download them for offline use](https://github.com/olivertwistor/olivertwistor-project-model/releases).
 
 ## Usage
-Follow the section [Installation][1]. If you're using this model as a template for your own projects, feel free to skip any steps that doesn't fit your particular project.
+Follow the section [Installation](#installation). If you're using this model as a template for your own projects, feel free to skip any steps that doesn't fit your particular project.
 
 ## Licenses
 The files in this repository are licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license. For detailed license terms, please read [LICENSE](LICENSE).
 
 ## Project instructions
-In this section, I will describe the steps to take for a project, from start to finish. Try to follow each step in the order they are written, but don't be afraid to go back to previous steps if you need to add or change something. After all, software development is an iterative and incremental process.
+In this section, I will describe the steps I take when working with a project, from start to finish. Try to follow each step in the order they are written, but don't be afraid to go back to previous steps if you need to add or change something. After all, software development is an iterative and incremental process. 
+
+If something does not suit your needs, feel free to change it. Remember that these are the steps *I* take; they may not necessarily be the steps *you* want to take.
 
 ### Create a new repository
-
 These instructions presume that you already have a Github account and are logged in.
 
 1. Go to https://github.com/new
 1. Choose a *Repository name*.
 1. Write a short *Description* of what the project is about.
-1. Choose between making the repository *Public* or *Private*. Public repositories are to be preferred since making it open source gives back to the community. For client work and the like, choose *Private*.
+1. Choose between making the repository *Public* or *Private*. Public repositories are to be preferred since making it open source gives back to the community. For client work and similar things, choose *Private*.
 1. Press the button *Create repository*.
 
 ### Add basic documentation
-
 The repository should have the following repository documentation, placed in the root of the repository:
 
 * `README.md` ([template](templates/template-readme.md "README.md template"))
 * `LICENSE` ([template](templates/template-license.md "LICENSE template"))
 * `CONTRIBUTING.md` ([template](templates/template-contributing.md "CONTRIBUTING.md template"))
-* `CHANGELOG.md` ([template](templates/template-changelog.md "CHANGELOG.md license"))
+* `RELEASE.md` ([template](templates/template-release.md "RELEASE.md template"))
+* `CHANGELOG.md` ([template](templates/template-changelog.md "CHANGELOG.md template"))
 
 ### Create a work breakdown structure
-
 In a work breakdown structure (WBS), the goal is to capture the totality of tasks needed for the project to be completed. This can be difficult to do, especially in software development where there are so many unknowns in the beginning. Don't worry if you won't capture all tasks in one go. Just try to capture as many tasks as possible; you can always return to this step later.
 
-[GitHub issues][6] is the place to store the WBS. One issue per task. For now, the order of the tasks aren't important, we'll cover that in the next section when we'll make a network diagram. Just focus on capturing as many tasks as possible. In order to group things together, for example all UI tasks or tasks belonging to a module or part of your project, feel free to create GitHub labels for each group and attach the appropriate ones to your created issues. For each issue, try to decide the importance or priority according to the following table:
+I use [Redmine](https://www.redmine.org/) for the WBS, but you can either have the WBS in a plain text file under a `repo-docs/` folder or as GitHub issues. I reserve GitHub issues for user supplied tasks, but it's up to you what you want to do. 
 
-| Importance  | Description                                                  |
-| ----------- | ------------------------------------------------------------ |
-| must-have   | Tasks that are absolutely necessary for the project to work as intended. Think of this importance as that you would have a minimum viable product when all must-have tasks are complete. |
-| should-have | Tasks that aren't necessary to create a minimum viable product, but still would greatly enhanced the user experience. |
-| could-have  | Tasks of lower importance. Think quality of life, or that extra touch that is nice to have, but nothing that should impede the release of the project if it's not included. |
-
-Add these importance levels as GitHub labels as well. If you're unsure which level to choose for a specific task, leave it for now. You can always come back to it later.
+For now, the order of the tasks aren't important, we'll cover that in the next section when we'll make a network diagram. Just focus on capturing as many tasks as possible.
 
 The following table shows an example of a (partial) WBS for a calculator app:
 
-| Issue ID | Description                                | Modules | Importance  |
-| :------: | :----------------------------------------- | :------ | :---------- |
-|    1     | Design the buttons                         | ui      | must-have   |
-|    2     | Lay out all the UI components              | ui      | must-have   |
-|    3     | Write help text                            | ui      | should-have |
-|    4     | Make all strings translatable              | ui      | could-have  |
-|    5     | Make all numbers locale-aware              | ui      | could-have  |
-|    6     | Make the app fully keyboard accessible     | ui      | should-have |
-|    7     | Define basic arithmetic                    | math    | must-have   |
-|    8     | Define statistical functions               | math    | should-have |
-|    9     | Enable exporting calculations to text file | io      | could-have  |
+| Issue ID | Description
+| :---: | :---
+| 1 | Design the buttons
+| 2 | Lay out all the UI components
+| 3 | Write help text
+| 4 | Make all strings translatable
+| 5 | Make all numbers locale-aware
+| 6 | Make the app fully keyboard accessible
+| 7 | Define basic arithmetic
+| 8 | Define statistical functions
+| 9 | Enable exporting calculations to text file
 
-Some of these tasks probably could be broken down further, depending on how granular you want your workflow to be. While working, if you discover that a particular task should have been broken down into subtasks, do the following:
-
-1. Add the subtasks as GitHub issues.
-1. If appropriate, label the subtasks with the "parent", like so: `math/basic-arithmetic`, if breaking down issue #7 in the preceding table.
-1. Close the "parent" GitHub issue.
-
-Also, note that deciding which importance a particular task should get is subjective and depends on what you find more important than other things. In my calculator app example, I've decided that's keyboard accessibility is more important than internationalisation and localisation. My motivation for that is that a user who can't use a mouse would be completely shut out from using the app if the app isn't keyboard accessible, while a user whose native language differs from the app's original language could possibly use a dictionary if need be. The point is that while lack of internationalisation and localisation can make the experience worse for a user, it doesn't *preclude* the user from using the app.
-
-#### GitHub issues
-
-To create GitHub issues based on the task from the WBS, please do the following:
-
-1. On the repository front page, press the *Issues* tab.
-1. Press the *New issue* button.
-1. Write a short but descriptive *Title*. Example: `Make all strings translatable`.
-1. If you want to write more than just that short description, feel free to write it in the *Leave a comment* text box. Here you can write implementation details if you want, or perhaps argue for why this issue was created.
-1. Assign a user by pressing the cogwheel besides *Assignee*. This can be altered later, so if you're not sure to whom to assign this issue, it's better to leave it empty for now.
-1. Press the cogwheel besides *Labels* and choose all labels that apply. For our calculator app example, appropriate labels would be `ui` and `should-have`. Since it is an enhancement, it should probably also be labelled with `enhancement`. However, neither `ui` nor `enhancement` is mandatory. The important thing here is the importance label (`should-have`).
-1. Leave both *Project* and *Milestone* empty. In this model, I'm not using GitHub projects or milestones, but if you do, feel free to select appropriate values here.
-1. Press the *Submit new issue* button.
+Some of these tasks probably could be broken down further, depending on how granular you want your workflow to be. Don't be afraid to break up tasks or fuse them together after you've started working. It's often not until you're working you'll discover the right granularity. It also depends on the particular project.
 
 ### Create a network diagram
+With the work breakdown structure in place, it's now time to create a network diagram. In this step we'll define an order to all tasks, as well their dependency relationships. Some tasks may be quite independent and could be worked on whenever and in parallel with other tasks, but most tasks are either dependent on the completion of other tasks or have dependent tasks themselves.
 
-With the work breakdown structure in place, and GitHub issues created, it's now time to create a network diagram. In this step we'll define an order to all tasks, as well their dependency relationships. Some tasks may be quite independent and could be worked on whenever and in parallel with other tasks, but most tasks are either dependent on the completion of other tasks or have dependent tasks themselves.
+A network diagram can either be created as a mind map or a table. I'll show an example of the latter. I'm using the same calculator app example as in the previous section. Note that this is the same table as in the WBS section, with dependencies added.
 
-A network diagram can either be created as a mind map or a table. I'll show an example of the latter next. I'm using the same calculator app example as in the previous section. Note that this is the same table as in the WBS section, with the *Modules* heading removed (for the sake of readability) and dependencies added.
-
-| Issue ID | Description                                | Importance  | Depends upon |
-| :------: | :----------------------------------------- | :---------- | :----------: |
-|    1     | Design the buttons.                        | must-have   |              |
-|    2     | Lay out all the UI components.             | must-have   |              |
-|    3     | Write help text.                           | should-have |              |
-|    4     | Make all strings translatable.             | could-have  |      3       |
-|    5     | Make all numbers locale-aware.             | could-have  |     1, 2     |
-|    6     | Make the app fully keyboard accessible.    | should-have |      2       |
-|    7     | Define basic arithmetic.                   | must-have   |              |
-|    8     | Define statistical functions.              | should-have |      7       |
-|    9     | Enable exporting calculation to text file. | could-have  |      7       |
+| Issue ID | Description | Depends upon |
+| :---: | :--- | :---: |
+| 1 | Design the buttons
+| 2 | Lay out all the UI components
+| 3 | Write help text
+| 4 | Make all strings translatable | 3
+| 5 | Make all numbers locale-aware | 1, 2
+| 6 | Make the app fully keyboard accessible | 2
+| 7 | Define basic arithmetic
+| 8 | Define statistical functions | 7
+| 9 | Enable exporting calculation to text file | 7
 
 As you can see, it's possible to have both one-to-many dependencies and many-to-one dependencies. For example, when you're finished with issue #2, you may proceed with issue #6, but not issue #5 before you're also finished with issue #1. Unfortunately, GitHub doesn't provide a way to express these kinds of relationships. Apart from managing a network diagram yourself, the only thing that GitHub can help with regarding this is milestones. We will however not use milestones in this model.
 
