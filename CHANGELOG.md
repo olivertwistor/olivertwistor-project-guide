@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## Unreleased
 
+## 3.1.0
+* Changed
+    * The branching model does no longer involve the staging branch. Only master and develop are necessary.
+
 ## 3.0.0
 * Changed
     * Complete overhaul of the workflow. Everything is simplified, and tailored to single developers.
