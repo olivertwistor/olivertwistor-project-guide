@@ -128,14 +128,11 @@ When you are done working with a task, follow this checklist:
 1. Under the heading *Unreleased*, update both `CHANGELOG.md` and `RELEASE.md` with the changes you've made to the project with this task. `CHANGELOG` is aimed towards other developers, while `RELEASE` is aimed towards end-users.
 1. If applicable, update `README.md` with more information about installation and usage. Remember to update the license information as well, if you have made use of a new library for this task.
 1. Commit and push the `develop` branch one final time (this assumes you have worked on the `develop` branch). 
-1. Create a new branch from the `master` branch. Call it `staging`.
-1. Try to merge `develop` with `staging`.
+1. Try to merge `develop` with `master`. This shouldn't produce any merge conflicts.
 1. If there are no merge conflicts, proceed to the next step. Otherwise, read on:
     1. Resolve all merge conflicts.
     1. Make sure that every test passes, again, and that your merge hasn't broken anything else in the code.
-    1. Commit and push the `staging` branch.
-1. Merge the temporary branch with `master`. Resolve any conflicts by always choosing the changes from `staging` over `master`.
-1. Remove the `staging` branch, both locally and remotely on GitHub.
+    1. Commit and push the `master` branch.
 1. Merge `master` with `develop`.
 
 ### Create a release
