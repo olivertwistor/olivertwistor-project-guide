@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ## Unreleased
 
+## 3.2.0
+
+-   Added
+    -   Notice that this project is discontinued and the repository archived.
+
 ## 3.1.0
 * Changed
     * The branching model does no longer involve the staging branch. Only master and develop are necessary.

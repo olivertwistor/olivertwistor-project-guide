@@ -1,8 +1,12 @@
 # Olivertwistor Project Model
 This is my project model that I'm using with all my programming projects. It includes both instructions and templates.
 
+## This repository is archived
+
+**I'm archiving this repository and all work on this project model is hereby discontinued. The reason is that I will work on a new project model for my business, which I will use also for my private projects. You can find it [here](https://github.com/jn-programutveckling/project-model). Please follow the development on that, but if you'd rather stick to this one, the last and final release is [v3.2.0](https://github.com/olivertwistor/olivertwistor-project-model/releases/tag/v3.2.0).**
+
 ## Installation
-You can either read all the documents in this repository [online on Github](https://github.com/olivertwistor/olivertwistor-project-model) or [download them for offline use](https://github.com/olivertwistor/olivertwistor-project-model/releases).
+You can either read all the documents in this repository [online on GitHub](https://github.com/olivertwistor/olivertwistor-project-model) or [download them for offline use](https://github.com/olivertwistor/olivertwistor-project-model/releases).
 
 ## Usage
 Follow the section [Installation](#installation). If you're using this model as a template for your own projects, feel free to skip any steps that doesn't fit your particular project.
